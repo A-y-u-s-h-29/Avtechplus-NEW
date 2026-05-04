@@ -173,17 +173,7 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Call to Action Bar - Rounded corners */}
-        <div className="mt-20 bg-gray-900 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
-          <div className="relative z-10">
-            <h4 className="text-white text-2xl font-bold exo uppercase mb-2">Need a custom techno-commercial audit?</h4>
-            <p className="text-gray-400">Our experts are ready to analyze your project health and risk factors.</p>
-          </div>
-          <button className="relative z-10 bg-orange-500 text-white px-8 py-4 font-black uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300">
-            Contact Our Team
-          </button>
-          <div className="absolute top-0 right-0 w-32 h-full bg-orange-500/10 -skew-x-12 translate-x-10"></div>
-        </div>
+        
 
       </div>
     </div>
