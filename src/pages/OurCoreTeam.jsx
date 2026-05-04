@@ -1,5 +1,5 @@
 import React from "react";
-import { FiUser, FiSettings, FiBriefcase, FiUsers, FiAward, FiCheckCircle } from "react-icons/fi";
+import { FiUser, FiSettings, FiBriefcase, FiUsers, FiAward, FiCheckCircle, FiMapPin, FiPhone, FiMail } from "react-icons/fi";
 
 const CoreTeam = () => {
   const leadership = {
@@ -11,8 +11,14 @@ const CoreTeam = () => {
       "Contracts & Arbitration",
       "Method Engineering",
       "Resource Planning",
-      "Site Management"
-    ]
+      "Site Management",
+      "Project Leadership",
+      "Risk Management"
+    ],
+    quote: "Engineering excellence is not just about technical precision—it's about building trust, creating value, and delivering promises that stand the test of time.",
+    location: "New Delhi, India",
+    phone: "+91-9717293621",
+    email: "ak.khurana@avtechplus.com"
   };
 
   const organizationDesign = [
@@ -45,54 +51,7 @@ const CoreTeam = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* Principal Leadership Card with Image Space */}
-          <div className="lg:col-span-5">
-            <div className="relative group">
-              {/* IMAGE PLACEHOLDER - Add your image path in src */}
-              <div className="w-full aspect-[4/5] bg-gray-200 rounded-2xl mb-6 overflow-hidden relative border border-gray-100">
-                <img 
-                  src="/images/ceo.png" 
-                  alt="Mr. A.K. Khurana" 
-                  className="w-full h-full object-cover"
-                  onError={(e) => { e.target.style.display='none' }} // Hides broken icon if no image
-                />
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                  <span className="text-xs font-bold uppercase tracking-widest">Photo of Mr. A.K. Khurana</span>
-                </div>
-              </div>
-
-              <div className="relative bg-gray-900 rounded-2xl p-8 md:p-10 shadow-2xl overflow-hidden">
-                <div className="absolute top-0 right-0 p-6">
-                  <div className="text-orange-500 opacity-20 text-7xl font-black">30+</div>
-                </div>
-                
-                <span className="text-orange-500 font-bold text-xs uppercase tracking-widest mb-2 block">
-                  Senior Management
-                </span>
-                <h3 className="text-3xl font-black text-white uppercase exo mb-1">
-                  {leadership.name}
-                </h3>
-                <p className="text-gray-400 text-sm font-bold uppercase mb-6 tracking-tight">
-                  Guided by Excellence
-                </p>
-                
-                <p className="text-gray-300 text-sm leading-relaxed mb-8 italic border-l-2 border-orange-500 pl-4">
-                  "{leadership.bio}"
-                </p>
-
-                <div className="grid grid-cols-2 gap-4">
-                  {leadership.expertise.map((skill, i) => (
-                    <div key={i} className="flex items-center gap-2 text-[11px] text-orange-100 font-bold uppercase tracking-tighter">
-                      <div className="w-1.5 h-1.5 bg-orange-500 rounded-full"></div>
-                      {skill}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Organization Design & Working Strength */}
+          {/* Left Side: Organization Design & Working Strength */}
           <div className="lg:col-span-7">
             <div className="mb-8 p-8 bg-orange-50 border border-orange-100 rounded-xl">
               <h4 className="text-xl font-black text-gray-900 uppercase exo mb-3">Our Strategic Approach</h4>
@@ -127,7 +86,7 @@ const CoreTeam = () => {
               ))}
               
               {/* Deployment Strategy Box */}
-              <div className="md:col-span-2 p-6 bg-gray-900 text-white flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="md:col-span-2 p-6 bg-gray-900 text-white flex flex-col md:flex-row items-center justify-between gap-4 rounded-xl">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full border-2 border-orange-500 flex items-center justify-center font-black text-orange-500">
                     31
@@ -145,20 +104,102 @@ const CoreTeam = () => {
               </div>
             </div>
 
-            {/* Added General Info Section */}
+            {/* Additional Information Section */}
             <div className="mt-12 space-y-6">
-                <div className="flex gap-4">
-                    <FiCheckCircle className="text-orange-500 mt-1 flex-shrink-0" />
-                    <p className="text-gray-500 text-sm italic">
-                        Our key experts have worked with India's largest companies—helping them rise as global champions and accelerating value creation for dynamic projects.
-                    </p>
+              <div className="flex gap-4">
+                <FiCheckCircle className="text-orange-500 mt-1 flex-shrink-0" />
+                <p className="text-gray-500 text-sm italic">
+                  Our key experts have worked with India's largest companies—helping them rise as global champions and accelerating value creation for dynamic projects.
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <FiCheckCircle className="text-orange-500 mt-1 flex-shrink-0" />
+                <p className="text-gray-500 text-sm italic">
+                  AVtech Plus is engaged in core and critical sectors of the economy, ensuring unmatched expertise across Engineering, Construction, and Infrastructure.
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <FiCheckCircle className="text-orange-500 mt-1 flex-shrink-0" />
+                <p className="text-gray-500 text-sm italic">
+                  Our team combines deep technical knowledge with strong commercial understanding to deliver transformative solutions that minimize risks and maximize value.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side: Principal Leadership Card */}
+          <div className="lg:col-span-5">
+            <div className="relative group">
+              {/* Image Placeholder */}
+              <div className="w-full aspect-[4/5] bg-gray-200 rounded-2xl mb-6 overflow-hidden relative border border-gray-100">
+                <img 
+                  src="/images/ceo.png" 
+                  alt="Mr. A.K. Khurana" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => { e.target.style.display='none' }}
+                />
+                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+                  <span className="text-xs font-bold uppercase tracking-widest">Mr. A.K. Khurana</span>
                 </div>
-                <div className="flex gap-4">
-                    <FiCheckCircle className="text-orange-500 mt-1 flex-shrink-0" />
-                    <p className="text-gray-500 text-sm italic">
-                        AVtech Plus is engaged in core and critical sectors of the economy, ensuring unmatched expertise across Engineering, Construction, and Infrastructure.
-                    </p>
+              </div>
+
+              <div className="relative bg-gray-900 rounded-2xl p-8 shadow-2xl overflow-hidden">
+                <div className="absolute top-0 right-0 p-6">
+                  <div className="text-orange-500 opacity-20 text-7xl font-black">30+</div>
                 </div>
+                
+                <span className="text-orange-500 font-bold text-xs uppercase tracking-widest mb-2 block">
+                  Senior Management Professional
+                </span>
+                <h3 className="text-3xl font-black text-white uppercase exo mb-1">
+                  {leadership.name}
+                </h3>
+                <p className="text-gray-400 text-sm font-bold uppercase mb-4 tracking-tight">
+                  {leadership.role}
+                </p>
+                
+                {/* Experience Badge */}
+                <div className="inline-block bg-orange-500/20 rounded-full px-3 py-1 mb-4">
+                  <span className="text-orange-400 text-xs font-bold">{leadership.experience} Experience</span>
+                </div>
+                
+                {/* Quote */}
+                <div className="mb-6 p-4 bg-white/5 rounded-lg border-l-3 border-orange-500">
+                  <p className="text-gray-300 text-sm italic leading-relaxed">
+                                    "{leadership.quote}"
+                  </p>
+                </div>
+                
+                <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                  {leadership.bio}
+                </p>
+
+                {/* Expertise Grid */}
+                <div className="grid grid-cols-2 gap-3 mb-6">
+                  {leadership.expertise.map((skill, i) => (
+                    <div key={i} className="flex items-center gap-2 text-[11px] text-orange-100 font-bold uppercase tracking-tighter">
+                      <div className="w-1.5 h-1.5 bg-orange-500 rounded-full"></div>
+                      {skill}
+                    </div>
+                  ))}
+                </div>
+
+                {/* Contact Information */}
+                <div className="pt-4 border-t border-gray-800 space-y-2">
+                  <div className="flex items-center gap-2 text-gray-400 text-xs">
+                    <FiMapPin className="text-orange-500" />
+                    <span>{leadership.location}</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-400 text-xs">
+                    <FiPhone className="text-orange-500" />
+                    <span>{leadership.phone}</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-400 text-xs">
+                    <FiMail className="text-orange-500" />
+                    <span>{leadership.email}</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
