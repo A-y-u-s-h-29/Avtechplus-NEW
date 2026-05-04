@@ -1,212 +1,140 @@
 import React from "react";
-import { FiUser, FiSettings, FiBriefcase, FiUsers, FiAward, FiCheckCircle, FiMapPin, FiPhone, FiMail, FiStar } from "react-icons/fi";
+import { FiCheckCircle, FiTrendingUp, FiSettings, FiBriefcase, FiUsers, FiAward } from "react-icons/fi";
 
-const CoreTeam = () => {
+const CoreLeadership = () => {
   const leadership = {
     name: "Mr. A.K. Khurana",
     role: "Managing Director & Principal Consultant",
     experience: "30+ Years",
-    bio: "A seasoned senior management professional with over 30 years of diverse experience across prestigious organizations. Mr. Khurana has successfully led and completed landmark projects throughout India, bringing invaluable leadership to the firm.",
+    bio: "A seasoned senior management professional with over 30 years of diverse experience across prestigious organizations. Mr. Khurana has successfully led and completed landmark projects throughout India, bringing invaluable expertise and leadership to AVtech Plus LLP.",
     expertise: [
+      "Project Management",
       "Contracts & Arbitration",
-      "Method Engineering",
-      "Resource Planning",
-      "Site Management",
-      "Project Leadership",
-      "Risk Management"
-    ],
-    quote: "Engineering excellence is not just about technical precision—it's about building trust, creating value, and delivering promises that stand the test of time.",
-    location: "New Delhi, India",
-    phone: "+91-9717293621",
-    email: "ak.khurana@avtechplus.com"
+      "Modern Construction Methodologies",
+      "Resource Planning"
+    ]
   };
 
   const organizationDesign = [
-    { category: "Field & Survey", strength: 8, icon: <FiSettings />, color: "bg-orange-50" },
-    { category: "Estimation & Costing", strength: 7, icon: <FiBriefcase />, color: "bg-blue-50" },
-    { category: "SCM Experts", strength: 7, icon: <FiUsers />, color: "bg-green-50" },
-    { category: "Architecture & Draftsmen", strength: 5, icon: <FiAward />, color: "bg-purple-50" },
-    { category: "Support Services", strength: 4, icon: <FiUser />, color: "bg-gray-50" },
+    { category: "Field & Survey", strength: 8, icon: <FiSettings /> },
+    { category: "Estimation & Costing", strength: 7, icon: <FiBriefcase /> },
+    { category: "SCM Experts", strength: 7, icon: <FiUsers /> },
+    { category: "Architecture & Draftsmen", strength: 5, icon: <FiAward /> }
   ];
 
   return (
-    <section className="bg-[#F6F7F9] py-16 md:py-24">
+    <section className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         
-        {/* Header Section */}
-        <div className="text-center mb-12">
-          <span className="text-orange-500 font-semibold text-sm uppercase tracking-wide">Our Leadership</span>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-2 mb-3">
+        {/* Header */}
+        <div className="mb-12">
+          <span className="text-orange-600 font-black text-xs uppercase tracking-[0.3em] mb-4 block text-center md:text-left">
+            Leadership & Governance
+          </span>
+          <h2 className="text-4xl md:text-6xl font-black text-gray-900 uppercase exo leading-none text-center md:text-left">
             Our <span className="text-orange-500">Core Team</span>
-          </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Experienced professionals driving engineering excellence and project success
-          </p>
-          <div className="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
+          </h2>
+          <div className="w-20 h-2 bg-orange-500 mt-6 mx-auto md:mx-0"></div>
         </div>
 
-        {/* Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+        {/* Top Section: Image Left, Bio Right */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
           
-          {/* Left Column - Leadership Profile */}
-          <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-            {/* Profile Header with Image */}
-            <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-6 text-center">
-              <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <span className="text-5xl">👔</span>
-              </div>
-              <h2 className="text-2xl font-bold text-white">{leadership.name}</h2>
-              <p className="text-white/90 text-sm mt-1">{leadership.role}</p>
-              <div className="inline-block bg-white/20 rounded-full px-3 py-1 mt-3">
-                <span className="text-white text-xs font-semibold">{leadership.experience} Experience</span>
+          {/* LEFT: Image Placeholder */}
+          <div className="relative group">
+            <div className="absolute -inset-4 bg-gray-50 rounded-2xl -z-10 group-hover:bg-orange-50 transition-colors duration-500"></div>
+            <div className="aspect-[4/5] bg-gray-200 rounded-xl overflow-hidden shadow-2xl border-4 border-white relative">
+              <img 
+                src="/path-to-your-image/ak-khurana.jpg" 
+                alt="Mr. A.K. Khurana" 
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                onError={(e) => { e.target.style.display='none' }}
+              />
+              <div className="absolute inset-0 flex items-center justify-center text-gray-400 pointer-events-none">
+                <span className="text-xs font-bold uppercase tracking-widest">Photograph of Mr. A.K. Khurana</span>
               </div>
             </div>
+          </div>
+
+          {/* RIGHT: About A.K. Khurana */}
+          <div className="space-y-6">
+            <div>
+              <span className="bg-orange-500 text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest inline-block mb-4">
+                Principal Leadership
+              </span>
+              <h3 className="text-4xl font-black text-gray-900 uppercase exo leading-tight">
+                {leadership.name}
+              </h3>
+              <p className="text-orange-600 font-bold text-sm uppercase tracking-wider">
+                {leadership.role}
+              </p>
+            </div>
+
+            <p className="text-gray-600 leading-relaxed text-lg italic border-l-4 border-orange-500 pl-6">
+              "{leadership.bio}"
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+              {leadership.expertise.map((skill, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <FiCheckCircle className="text-orange-500" />
+                  <span className="text-xs font-bold text-gray-700 uppercase">{skill}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* BOTTOM SECTION: General Organization Info */}
+        <div className="border-t border-gray-100 pt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
-            {/* Profile Content */}
-            <div className="p-6">
-              {/* Quote */}
-              <div className="bg-orange-50 rounded-xl p-4 mb-6 border-l-4 border-orange-500">
-                <FiStar className="text-orange-500 mb-2" />
-                <p className="text-gray-700 text-sm italic leading-relaxed">
-                  "{leadership.quote}"
+            {/* Column 1: Firm Capability */}
+            <div className="space-y-4">
+              <h4 className="text-xl font-black text-gray-900 uppercase exo tracking-tighter">Sector Engagement</h4>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                AVtech Plus is engaged in core and critical sectors of the economy. Our capabilities span the entire spectrum from design till delivery, providing instrumental value in shaping landmark projects across India.
+              </p>
+              <div className="flex gap-2 pt-2">
+                <span className="text-[10px] font-black bg-gray-100 px-2 py-1 uppercase text-gray-600">Engineering</span>
+                <span className="text-[10px] font-black bg-gray-100 px-2 py-1 uppercase text-gray-600">Construction</span>
+                <span className="text-[10px] font-black bg-gray-100 px-2 py-1 uppercase text-gray-600">Audit</span>
+              </div>
+            </div>
+
+            {/* Column 2: Organizational Strength Grid */}
+            <div className="lg:col-span-2">
+              <h4 className="text-xl font-black text-gray-900 uppercase exo tracking-tighter mb-6">Centralized Pool of Expertise</h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {organizationDesign.map((item, i) => (
+                  <div key={i} className="p-4 bg-gray-50 text-center group hover:bg-orange-500 transition-all duration-300">
+                    <div className="text-orange-500 group-hover:text-white mb-2 flex justify-center text-xl">
+                      {item.icon}
+                    </div>
+                    <div className="text-xl font-black text-gray-900 group-hover:text-white leading-none">
+                      {item.strength}
+                    </div>
+                    <div className="text-[9px] font-bold uppercase text-gray-400 group-hover:text-orange-100 tracking-tighter">
+                      {item.category}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="mt-6 flex items-center gap-4 p-4 bg-gray-900 rounded-lg">
+                <FiTrendingUp className="text-orange-500 text-2xl" />
+                <p className="text-white text-xs font-medium">
+                  Our team members are <span className="text-orange-500">Skill-Based Allocated</span> to projects based on complexity, ensuring precision and maximum impact.
                 </p>
               </div>
-              
-              {/* Bio */}
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                {leadership.bio}
-              </p>
-              
-              {/* Expertise */}
-              <h3 className="font-semibold text-gray-800 mb-3 text-sm uppercase tracking-wide">Core Expertise</h3>
-              <div className="flex flex-wrap gap-2 mb-6">
-                {leadership.expertise.map((skill, i) => (
-                  <span key={i} className="bg-gray-100 text-gray-700 text-xs px-3 py-1.5 rounded-full">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-              
-              {/* Contact */}
-              <div className="pt-4 border-t border-gray-100 space-y-2">
-                <div className="flex items-center gap-2 text-gray-500 text-sm">
-                  <FiMapPin className="text-orange-500" />
-                  <span>{leadership.location}</span>
-                </div>
-                <div className="flex items-center gap-2 text-gray-500 text-sm">
-                  <FiPhone className="text-orange-500" />
-                  <span>{leadership.phone}</span>
-                </div>
-                <div className="flex items-center gap-2 text-gray-500 text-sm">
-                  <FiMail className="text-orange-500" />
-                  <span>{leadership.email}</span>
-                </div>
-              </div>
             </div>
           </div>
 
-          {/* Right Column - Organization Strength */}
-          <div className="space-y-6">
-            {/* Strategic Approach */}
-            <div className="bg-white rounded-2xl p-6 shadow-md">
-              <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                <span className="w-1 h-6 bg-orange-500 rounded-full"></span>
-                Our Strategic Approach
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                AVtech Plus LLP operates through a <strong className="text-orange-600">Centralized Pool of Expertise</strong>. 
-                Unlike traditional firms, our elite construction specialists are allocated based on project complexity. 
-                This ensures precision, maximum impact, and the highest standards of technical delivery across India.
-              </p>
-            </div>
-
-            {/* Team Strength Grid */}
-            <div className="bg-white rounded-2xl p-6 shadow-md">
-              <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <span className="w-1 h-6 bg-orange-500 rounded-full"></span>
-                Team Composition
-              </h3>
-              <div className="space-y-3">
-                {organizationDesign.map((item, index) => (
-                  <div key={index} className="flex items-center justify-between p-3 rounded-xl hover:shadow-sm transition-shadow">
-                    <div className="flex items-center gap-3">
-                      <div className={`w-10 h-10 ${item.color} rounded-lg flex items-center justify-center text-orange-500`}>
-                        {item.icon}
-                      </div>
-                      <span className="font-medium text-gray-700 text-sm">{item.category}</span>
-                    </div>
-                    <div className="text-right">
-                      <span className="text-xl font-bold text-gray-900">{item.strength}</span>
-                      <span className="text-gray-400 text-xs ml-1">Members</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              
-              {/* Total Strength */}
-              <div className="mt-4 pt-4 border-t border-gray-100">
-                <div className="flex items-center justify-between p-3 bg-gray-900 rounded-xl">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
-                      <FiUsers className="text-white" />
-                    </div>
-                    <span className="font-semibold text-white text-sm">Total Technical Strength</span>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-2xl font-bold text-orange-400">31</span>
-                    <span className="text-gray-400 text-xs ml-1">Experts</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Key Highlights */}
-            <div className="bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl p-6 text-white">
-              <h3 className="font-bold text-lg mb-3">Why Choose Us</h3>
-              <div className="space-y-2">
-                <div className="flex items-center gap-2 text-sm">
-                  <FiCheckCircle className="text-white" />
-                  <span>25+ Years of Industry Excellence</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <FiCheckCircle className="text-white" />
-                  <span>Legacy Since 1981</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <FiCheckCircle className="text-white" />
-                  <span>Pan India Project Experience</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <FiCheckCircle className="text-white" />
-                  <span>Trusted by Industry Leaders</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Additional Info Section */}
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-xl p-5 text-center shadow-sm">
-            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <FiUsers className="text-orange-500" />
-            </div>
-            <h4 className="font-bold text-gray-800">30+ Years</h4>
-            <p className="text-gray-500 text-xs">Leadership Experience</p>
-          </div>
-          <div className="bg-white rounded-xl p-5 text-center shadow-sm">
-            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <FiBriefcase className="text-orange-500" />
-            </div>
-            <h4 className="font-bold text-gray-800">100+ Projects</h4>
-            <p className="text-gray-500 text-xs">Successfully Completed</p>
-          </div>
-          <div className="bg-white rounded-xl p-5 text-center shadow-sm">
-            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <FiAward className="text-orange-500" />
-            </div>
-            <h4 className="font-bold text-gray-800">20+ Partners</h4>
-            <p className="text-gray-500 text-xs">Trusted Clients Nationwide</p>
+          {/* Bottom Footer Note */}
+          <div className="mt-16 text-center">
+            <p className="text-gray-400 text-[10px] uppercase font-bold tracking-[0.4em]">
+              Professionalism • High Standards of Governance • Sustainability
+            </p>
           </div>
         </div>
       </div>
@@ -214,4 +142,4 @@ const CoreTeam = () => {
   );
 };
 
-export default CoreTeam;
+export default CoreLeadership;
