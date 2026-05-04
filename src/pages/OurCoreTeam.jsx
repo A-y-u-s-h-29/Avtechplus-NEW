@@ -45,9 +45,9 @@ const CoreLeadership = () => {
             <div className="absolute -inset-4 bg-gray-50 rounded-2xl -z-10 group-hover:bg-orange-50 transition-colors duration-500"></div>
             <div className="aspect-[4/5] bg-gray-200 rounded-xl overflow-hidden shadow-2xl border-4 border-white relative">
               <img 
-                src="/path-to-your-image/ak-khurana.jpg" 
+                src="/images/ceo.png" 
                 alt="Mr. A.K. Khurana" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover "
                 onError={(e) => { e.target.style.display='none' }}
               />
               <div className="absolute inset-0 flex items-center justify-center text-gray-400 pointer-events-none">

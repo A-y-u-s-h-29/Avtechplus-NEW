@@ -7,22 +7,33 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [scrollingDown, setScrollingDown] = useState(false);
   
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
-  // Scroll detection logic
+  // Fixed scroll detection logic
   useEffect(() => {
     const controlNavbar = () => {
       if (typeof window !== 'undefined') {
-        // If scrolling down, hide; if scrolling up, show.
-        // Also ensure navbar stays visible if at the very top.
-        if (window.scrollY > lastScrollY && window.scrollY > 100) {
+        const currentScrollY = window.scrollY;
+        
+        // If scrolling down AND not at the very top
+        if (currentScrollY > lastScrollY && currentScrollY > 50) {
+          setScrollingDown(true);
           setIsVisible(false);
-        } else {
+        } 
+        // If scrolling up
+        else if (currentScrollY < lastScrollY) {
+          setScrollingDown(false);
           setIsVisible(true);
         }
-        setLastScrollY(window.scrollY);
+        // If at the top
+        else if (currentScrollY < 50) {
+          setIsVisible(true);
+        }
+        
+        setLastScrollY(currentScrollY);
       }
     };
 
@@ -47,28 +58,36 @@ const Navbar = () => {
     { id: 3, title: "Services", path: "/services" },
     { id: 4, title: "Projects", path: "/projects" },
     { id: 5, title: "Turnkey Services", path: "/turnkey-services" },
-    { id: 6, title: "Gallery", path: "/galery" },
+    { id: 6, title: "Gallery", path: "/gallery" },
     { id: 7, title: "Contact", path: "/contact" },
   ];
 
-  const textColor = isHomePage ? "text-black" : "text-gray-900";
+  // Different text colors based on page and scroll state
+  const getTextColor = () => {
+    if (isHomePage && !scrollingDown && window.scrollY < 50) {
+      return "text-black";
+    }
+    return "text-gray-900";
+  };
+
+  const textColor = getTextColor();
   const hoverColor = "hover:text-amber-700";
 
   return (
     <nav
-      className={`w-full z-50 transition-all duration-500 transform ${
+      className={`w-full z-50 transition-all duration-500 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } ${
-        isHomePage
+        isHomePage && !scrollingDown && window.scrollY < 50
           ? "bg-transparent absolute top-0 left-0 right-0"
-          : "bg-white/98 backdrop-blur-md fixed top-0 left-0 right-0 shadow-md border-b border-gray-200"
+          : "bg-white shadow-md border-b border-gray-200 fixed top-0 left-0 right-0"
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-1 sm:py-2">
         {/* Left side - Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2 exo"
+          className="flex items-center gap-2"
         >
           <img
             src="/images/logofi.png"
@@ -79,7 +98,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6 lg:gap-8">
-          <ul className="flex gap-6 lg:gap-8 exo items-center">
+          <ul className="flex gap-6 lg:gap-8 items-center">
             {navItems.map((item) => (
               <li 
                 key={item.id} 
@@ -89,7 +108,7 @@ const Navbar = () => {
               >
                 <Link
                   to={item.path}
-                  className={`${textColor} ${hoverColor} font-bold text-sm lg:text-[15px] transition-all duration-300 exo tracking-wide flex items-center gap-1 py-5`}
+                  className={`${textColor} ${hoverColor} font-bold text-sm lg:text-[15px] transition-all duration-300 tracking-wide flex items-center gap-1 py-5`}
                 >
                   {item.title}
                   {item.hasDropdown && (
@@ -102,7 +121,7 @@ const Navbar = () => {
                 {/* Dropdown Menu */}
                 {item.hasDropdown && (
                   <div 
-                    className={`absolute top-full left-0 w-60 bg-white shadow-2xl rounded-b-md border-t-4 border-[#FF6333] transition-all duration-300 transform ${
+                    className={`absolute top-full left-0 w-60 bg-white shadow-2xl rounded-b-md border-t-4 border-amber-600 transition-all duration-300 transform ${
                       dropdownOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
                     }`}
                   >
@@ -111,7 +130,7 @@ const Navbar = () => {
                         <Link
                           key={idx}
                           to={sub.path}
-                          className="block px-6 py-4 text-[14px] font-bold text-gray-900 hover:bg-orange-50 hover:text-[#FF6333] transition-colors duration-200 border-b border-gray-100 last:border-0"
+                          className="block px-6 py-4 text-[14px] font-bold text-gray-900 hover:bg-orange-50 hover:text-amber-600 transition-colors duration-200 border-b border-gray-100 last:border-0"
                         >
                           {sub.title}
                         </Link>
@@ -151,7 +170,7 @@ const Navbar = () => {
                     </Link>
                   ) : (
                     <div className="flex flex-col py-4">
-                      <div className="text-[#FF6333] text-xs font-black uppercase mb-4 tracking-[0.2em]">
+                      <div className="text-amber-600 text-xs font-black uppercase mb-4 tracking-[0.2em]">
                         {item.title}
                       </div>
                       <div className="flex flex-col gap-4 pl-4 border-l-2 border-orange-100">
