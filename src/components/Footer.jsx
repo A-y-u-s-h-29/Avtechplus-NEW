@@ -68,7 +68,7 @@ const Footer = () => {
               <div className="space-y-6">
                 <div className="group">
                   <h5 className="text-[10px] font-black uppercase text-gray-500 tracking-[0.3em] mb-3">Priority Mail</h5>
-                  <a href="mailto:r_rishi1@rediffmail.com" className="text-lg font-bold text-white hover:text-orange-500 transition-colors flex items-center gap-2">
+                  <a href="mailto:mesinfa@gmail.com" className="text-lg font-bold text-white hover:text-orange-500 transition-colors flex items-center gap-2">
                     <FiMail className="text-orange-500" /> mesinfa@gmail.com
                   </a>
                 </div>
