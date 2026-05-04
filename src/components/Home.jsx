@@ -69,7 +69,7 @@ function Home() {
                 Request Consultation
               </a>
               <a
-                href="#services"
+                href="/services"
                 className="group flex items-center justify-center gap-4 bg-white border-2 border-gray-200 text-gray-900 px-10 py-5 rounded-2xl hover:border-gray-900 transition-all duration-300 font-black uppercase text-sm tracking-widest"
               >
                 View Portfolio
