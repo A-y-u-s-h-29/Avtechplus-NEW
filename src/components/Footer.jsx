@@ -69,7 +69,7 @@ const Footer = () => {
                 <div className="group">
                   <h5 className="text-[10px] font-black uppercase text-gray-500 tracking-[0.3em] mb-3">Priority Mail</h5>
                   <a href="mailto:r_rishi1@rediffmail.com" className="text-lg font-bold text-white hover:text-orange-500 transition-colors flex items-center gap-2">
-                    <FiMail className="text-orange-500" /> AVtechPlus@gmail.com
+                    <FiMail className="text-orange-500" /> mesinfa@gmail.com
                   </a>
                 </div>
                 <div className="group">
@@ -86,9 +86,8 @@ const Footer = () => {
                 <FiMapPin className="text-3xl text-orange-500 mb-4 group-hover:scale-110 transition-transform" />
                 <h5 className="text-[10px] font-black uppercase text-gray-500 tracking-[0.3em] mb-2">Registered HQ</h5>
                 <p className="text-sm font-bold text-gray-200 leading-relaxed">
-                  Plot No: 1, Colony,<br />
-                  Bihar & Jharkhand Region,<br />
-                  India
+                  C9/9345 – Vasant Kunj New Delhi <br />
+                 - India Pin code: 110070
                 </p>
               </div>
             </div>
