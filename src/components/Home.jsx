@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FiArrowRight, FiPhone, FiCheckCircle, FiShield, FiAward } from "react-icons/fi";
 
 function Home() {
@@ -36,7 +37,7 @@ function Home() {
             <h1 className="text-2xl md:text-3xl lg:text-6xl font-black text-gray-900 leading-[0.9] mb-8 uppercase italic">
               Let's dream<br />
               <span className="text-orange-500">&</span> <br />
-        build together.
+              build together.
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed border-l-8 border-gray-100 pl-8 font-medium">
@@ -46,17 +47,17 @@ function Home() {
 
             {/* Feature Tags */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-               {[
-                 { icon: <FiShield />, text: "Safety First" },
-                 { icon: <FiAward />, text: "Quality Driven" },
-                 { icon: <FiCheckCircle />, text: "Legacy 1981" },
-                 { icon: <FiAward />, text: "EPC Experts" }
-               ].map((item, i) => (
-                 <div key={i} className="flex flex-col gap-2 p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                    <span className="text-orange-500 text-xl">{item.icon}</span>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">{item.text}</span>
-                 </div>
-               ))}
+              {[
+                { icon: <FiShield />, text: "Safety First" },
+                { icon: <FiAward />, text: "Quality Driven" },
+                { icon: <FiCheckCircle />, text: "Legacy 1981" },
+                { icon: <FiAward />, text: "EPC Experts" }
+              ].map((item, i) => (
+                <div key={i} className="flex flex-col gap-2 p-4 bg-gray-50 rounded-2xl border border-gray-100">
+                  <span className="text-orange-500 text-xl">{item.icon}</span>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">{item.text}</span>
+                </div>
+              ))}
             </div>
 
             {/* CTAs */}
@@ -68,13 +69,13 @@ function Home() {
                 <FiPhone className="text-orange-500 group-hover:text-white" />
                 Request Consultation
               </a>
-              <a
-                href="/services"
+              <Link
+                to="/services"
                 className="group flex items-center justify-center gap-4 bg-white border-2 border-gray-200 text-gray-900 px-10 py-5 rounded-2xl hover:border-gray-900 transition-all duration-300 font-black uppercase text-sm tracking-widest"
               >
                 View Portfolio
                 <FiArrowRight className="group-hover:translate-x-2 transition-transform" />
-              </a>
+              </Link>
             </div>
 
             <p className="text-gray-400 text-xs font-black uppercase tracking-[0.4em]">
@@ -103,8 +104,8 @@ function Home() {
               <div className="absolute bottom-10 left-0 w-full px-10">
                 <div className="flex justify-between items-end">
                   <div className="space-y-2">
-                     <p className="text-orange-500 font-black text-xs uppercase tracking-[0.5em]">Current Project</p>
-                     <h3 className="text-white text-3xl font-black uppercase tracking-tight italic">Structural Excellence</h3>
+                    <p className="text-orange-500 font-black text-xs uppercase tracking-[0.5em]">Current Project</p>
+                    <h3 className="text-white text-3xl font-black uppercase tracking-tight italic">Structural Excellence</h3>
                   </div>
                   
                   {/* Navigation Arrows */}
@@ -140,8 +141,8 @@ function Home() {
             
             {/* Years of Experience Floating Card */}
             <div className="absolute -bottom-6 -left-10 bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 hidden md:block">
-               <p className="text-4xl font-black text-gray-900 mb-1">25+</p>
-               <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">Years of<br/>Expertise</p>
+              <p className="text-4xl font-black text-gray-900 mb-1">25+</p>
+              <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">Years of<br/>Expertise</p>
             </div>
           </div>
           
