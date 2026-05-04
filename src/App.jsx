@@ -12,6 +12,9 @@ import Footer from "./components/Footer";
 import Vision from "./components/Vision";
 import Services from "./components/Services";
 import Sectors from "./components/Sectors";
+import AboutAvtech from "./pages/AboutAvtech";
+import OurPromises from "./pages/OurPromises";
+import OurCoreTeam from "./pages/OurCoreTeam";
 
 
 
@@ -35,6 +38,9 @@ function App() {
           }
         />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/about-avtech" element={<AboutAvtech />} />
+        <Route path="/our-promises" element={<OurPromises />} />
+        <Route path="/our-core-team" element={<OurCoreTeam />} />
       </Routes>
       <Footer />
     </Router>

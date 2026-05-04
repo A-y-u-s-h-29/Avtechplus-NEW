@@ -38,9 +38,9 @@ const Navbar = () => {
       path: "/about",
       hasDropdown: true,
       subItems: [
-        { title: "About AVtech", path: "/about" },
-        { title: "Our Promises", path: "/promises" },
-        { title: "Our Core Team", path: "/team" },
+        { title: "About AVtech", path: "/about-avtech" },
+        { title: "Our Promises", path: "/our-promises" },
+        { title: "Our Core Team", path: "/our-core-team" },
         { title: "Associations", path: "/associations" },
       ]
     },

@@ -129,7 +129,7 @@ const Sectors = () => {
               <div className="flex flex-col md:flex-row h-full">
                 {/* Icon & Content Side */}
                 <div className="flex-1 p-6 md:p-8">
-                  <div className={`w-14 h-14 bg-gradient-to-br ${sector.color} rounded-xl flex items-center justify-center mb-5 group-hover:rotate-6 transition-transform duration-300`}>
+                  <div className={`w-14 h-14 bg-gradient-to-br rounded-xl flex items-center justify-center mb-5 group-hover:rotate-6 transition-transform duration-300`}>
                     <span className="text-2xl">{sector.icon}</span>
                   </div>
                   
