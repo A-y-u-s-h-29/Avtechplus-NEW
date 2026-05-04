@@ -76,7 +76,7 @@ const Footer = () => {
                   <h5 className="text-[10px] font-black uppercase text-gray-500 tracking-[0.3em] mb-3">Project Helpline</h5>
                   <div className="space-y-2 text-lg font-bold text-white transition-colors">
                     
-                     <a href="tel:+919717293621 " className="hover:text-orange-500 block">+91 31136 53615</a>
+                     <a href="tel:+919717293621 " className="hover:text-orange-500 block">+91 9717293621</a>
                   </div>
                 </div>
               </div>
