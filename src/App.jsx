@@ -18,6 +18,9 @@ import OurPromises from "./pages/OurPromises";
 import OurCoreTeam from "./pages/OurCoreTeam";
 import Association from "./pages/Association";
 import Gallery from "./pages/Gallery";
+import { Contact } from "lucide-react";
+import ContactPage from "./pages/ContactPage";
+import TurnkeyServices from "./pages/TurnkeyServices";
 
 function App() {
   return (
@@ -49,6 +52,10 @@ function App() {
         <Route path="/our-core-team" element={<OurCoreTeam />} />
         <Route path="/associations" element={<Association />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="turnkey-services" element={<TurnkeyServices />} />
+
       </Routes>
       
       {/* Footer is outside Routes - will show on ALL pages */}

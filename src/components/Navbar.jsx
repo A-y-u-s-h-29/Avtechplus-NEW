@@ -108,7 +108,7 @@ const Navbar = () => {
               >
                 <Link
                   to={item.path}
-                  className={`${textColor} ${hoverColor} font-bold text-sm lg:text-[15px] transition-all duration-300 tracking-wide flex items-center gap-1 py-5`}
+                  className={`${textColor} ${hoverColor} font-bold text-sm lg:text-[20px] transition-all duration-300 tracking-wide flex items-center gap-1 py-5`}
                 >
                   {item.title}
                   {item.hasDropdown && (

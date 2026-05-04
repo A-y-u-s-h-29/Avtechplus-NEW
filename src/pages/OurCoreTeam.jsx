@@ -50,9 +50,6 @@ const CoreLeadership = () => {
                 className="w-full h-full object-cover "
                 onError={(e) => { e.target.style.display='none' }}
               />
-              <div className="absolute inset-0 flex items-center justify-center text-gray-400 pointer-events-none">
-                <span className="text-xs font-bold uppercase tracking-widest">Photograph of Mr. A.K. Khurana</span>
-              </div>
             </div>
           </div>
 
