@@ -40,8 +40,8 @@ const ContactPage = () => {
                   <h4 className="text-xs font-black uppercase text-gray-500 tracking-widest mb-3">Registered Address</h4>
                   {/* Increased to text-xl */}
                   <p className="text-gray-200 text-xl leading-relaxed font-bold">
-                    Strategic Operations across<br />
-                    Bihar & Jharkhand
+                    C9/9345 – Vasant Kunj New Delhi <br />
+                    - India Pin code: 110070
                   </p>
                 </div>
               </div>
@@ -53,7 +53,7 @@ const ContactPage = () => {
                 <div>
                   <h4 className="text-xs font-black uppercase text-gray-500 tracking-widest mb-3">Email Inquiries</h4>
                   {/* Increased to text-2xl */}
-                  <p className="text-white font-black text-2xl">info@avtechplus.com</p>
+                  <p className="text-white font-black text-2xl"> mesinfa@gmail.com</p>
                 </div>
               </div>
 
@@ -63,7 +63,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h4 className="text-xs font-black uppercase text-gray-500 tracking-widest mb-3">Business Relations</h4>
-                  <p className="text-white font-black text-2xl">+91 [Official Number]</p>
+                  <p className="text-white font-black text-2xl">+91 9717293621 </p>
                 </div>
               </div>
             </div>
