@@ -83,57 +83,51 @@ const CoreLeadership = () => {
         </div>
 
         {/* BOTTOM SECTION: General Organization Info */}
-        <div className="border-t border-gray-100 pt-16">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            
-            {/* Column 1: Firm Capability */}
-            <div className="space-y-4">
-              <h4 className="text-xl font-black text-gray-900 uppercase exo tracking-tighter">Sector Engagement</h4>
-              <p className="text-gray-500 text-sm leading-relaxed">
-                AVtech Plus is engaged in core and critical sectors of the economy. Our capabilities span the entire spectrum from design till delivery, providing instrumental value in shaping landmark projects across India.
-              </p>
-              <div className="flex gap-2 pt-2">
-                <span className="text-[10px] font-black bg-gray-100 px-2 py-1 uppercase text-gray-600">Engineering</span>
-                <span className="text-[10px] font-black bg-gray-100 px-2 py-1 uppercase text-gray-600">Construction</span>
-                <span className="text-[10px] font-black bg-gray-100 px-2 py-1 uppercase text-gray-600">Audit</span>
-              </div>
-            </div>
-
-            {/* Column 2: Organizational Strength Grid */}
-            <div className="lg:col-span-2">
-              <h4 className="text-xl font-black text-gray-900 uppercase exo tracking-tighter mb-6">Centralized Pool of Expertise</h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {organizationDesign.map((item, i) => (
-                  <div key={i} className="p-4 bg-gray-50 text-center group hover:bg-orange-500 transition-all duration-300">
-                    <div className="text-orange-500 group-hover:text-white mb-2 flex justify-center text-xl">
-                      {item.icon}
-                    </div>
-                    <div className="text-xl font-black text-gray-900 group-hover:text-white leading-none">
-                      {item.strength}
-                    </div>
-                    <div className="text-[9px] font-bold uppercase text-gray-400 group-hover:text-orange-100 tracking-tighter">
-                      {item.category}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="mt-6 flex items-center gap-4 p-4 bg-gray-900 rounded-lg">
-                <FiTrendingUp className="text-orange-500 text-2xl" />
-                <p className="text-white text-xs font-medium">
-                  Our team members are <span className="text-orange-500">Skill-Based Allocated</span> to projects based on complexity, ensuring precision and maximum impact.
-                </p>
-              </div>
+<div className="border-t border-gray-100 pt-16">
+  
+  <div className="flex justify-center">
+    
+    <div className="w-full max-w-4xl">
+      <div className="mt-6 bg-gray-900 rounded-lg p-6">
+        
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 text-center">
+          
+          {/* Icon */}
+          <div className="flex-shrink-0">
+            <div className="w-14 h-14 rounded-full bg-gray-800 flex items-center justify-center">
+              <FiTrendingUp className="text-orange-500 text-2xl" />
             </div>
           </div>
 
-          {/* Bottom Footer Note */}
-          <div className="mt-16 text-center">
-            <p className="text-gray-400 text-[10px] uppercase font-bold tracking-[0.4em]">
-              Professionalism • High Standards of Governance • Sustainability
+          {/* Content */}
+          <div className="max-w-2xl">
+            <h3 className="text-white text-xl font-semibold mb-2">
+              We have an experienced team.
+            </h3>
+
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Our team members are{" "}
+              <span className="text-orange-500 font-medium">
+                Skill-Based Allocated
+              </span>{" "}
+              to projects keeping in view the complexity, ensuring precision and maximum impact.
             </p>
           </div>
+
         </div>
+      </div>
+    </div>
+
+  </div>
+
+  {/* Bottom Footer Note */}
+  <div className="mt-16 flex justify-center">
+    <p className="text-gray-500 text-[13px] uppercase font-bold tracking-[0.4em] text-center">
+      Professionalism • High Standards of Governance • Sustainability
+    </p>
+  </div>
+
+</div>
       </div>
     </section>
   );

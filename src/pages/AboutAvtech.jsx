@@ -17,7 +17,7 @@ const AboutAvtech = () => {
     {
       icon: <FiUsers className="w-6 h-6" />,
       title: "Chartered Leadership",
-      description: "Led by industry veterans and Chartered Engineers with specialized experience in EPC and Government contracts."
+      description: "Led by Experienced Engineers with specialized experience in EPC and Government contracts."
     }
   ];
 
@@ -40,8 +40,8 @@ const AboutAvtech = () => {
               {/* Overlay Experience Card */}
               <div className="absolute bottom-10 left-10 bg-gray-900 text-white p-8 rounded-2xl shadow-2xl border-b-4 border-orange-500">
                 <div className="flex flex-col">
-                  <span className="text-5xl font-black block leading-none mb-2">15+</span>
-                  <span className="text-[10px] uppercase font-black tracking-[0.3em] text-orange-500">Years of Incorporation</span>
+                  <span className="text-5xl font-black block leading-none mb-2">35+</span>
+                  <span className="text-[10px] uppercase font-black tracking-[0.3em] text-orange-500">YEARS OF INDUSTRY EXPERIENCE</span>
                 </div>
               </div>
             </div>
@@ -102,7 +102,7 @@ const AboutAvtech = () => {
             <div className="mt-12 flex items-center gap-4 p-5 bg-orange-50 rounded-2xl border-l-4 border-orange-500">
                <FiAward className="text-3xl text-orange-600" />
                <p className="text-sm font-bold text-gray-800 uppercase tracking-wide leading-tight">
-                 Registered with the Institute of Engineers (India) & MSME Certified Entity
+                MSME Certified Entity
                </p>
             </div>
           </div>

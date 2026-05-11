@@ -14,8 +14,6 @@ const Associations = () => {
     { name: "Alstom India Limited", sector: "Rail & Metro", icon: "🚆", size: "Multinational" },
     { name: "CPWD India", sector: "Government Infrastructure", icon: "🏛️", size: "Central Govt" },
     { name: "Tata Projects Limited", sector: "Construction & Engineering", icon: "🏗️", size: "Industry Leader" },
-    { name: "JICA Japan", sector: "International Development", icon: "🇯🇵", size: "International" },
-    { name: "Isolux Corsan Spain", sector: "International Engineering", icon: "🇪🇸", size: "Global Partner" },
   ];
 
   // International Partners
@@ -26,15 +24,41 @@ const Associations = () => {
 
   // Government Associations
   const governmentAssociations = [
-    { name: "CPWD", fullForm: "Central Public Works Department", focus: "Government Infrastructure" },
-    { name: "State PWDs", fullForm: "State Public Works Departments", focus: "State Infrastructure" },
-    { name: "NHAI", fullForm: "National Highways Authority of India", focus: "Road Projects" },
-  ];
+  {
+    name: "CPWD",
+    fullForm: "Central Public Works Department",
+    focus: "Government Infrastructure",
+  },
+  {
+    name: "State PWDs",
+    fullForm: "State Public Works Departments",
+    focus: "State Infrastructure",
+  },
+  {
+    name: "NHAI",
+    fullForm: "National Highways Authority of India",
+    focus: "Road Projects",
+  },
+  {
+    name: "Government of Maharashtra",
+    fullForm: "DDJAY Project",
+    focus: "Government Development Projects",
+  },
+  {
+    name: "National Building Corporation of India",
+    fullForm: "Affordable Housing",
+    focus: "Housing Infrastructure",
+  },
+  {
+    name: "Indian Railways",
+    fullForm: "Dedicated Freight Corridor",
+    focus: "Electrification Projects",
+  },
+];
 
   // Industry Associations
   const industryAssociations = [
-    { name: "CIDC", fullForm: "Construction Industry Development Council", focus: "Industry Standards" },
-    { name: "BIA", fullForm: "Builders Association of India", focus: "Industry Representation" },
+    { name: "CIDC", fullForm: "Real Estate Organisations", focus: "Industry Standards" },
   ];
 
   // Key Statistics
@@ -61,22 +85,7 @@ const Associations = () => {
           <div className="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
         </div>
 
-        {/* Stats Row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className={`bg-gray-50 rounded-xl p-5 text-center hover:shadow-md transition-all duration-300 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              }`}
-              style={{ transitionDelay: `${index * 100}ms`, opacity: isVisible ? 1 : 0, transform: isVisible ? 'translateY(0)' : 'translateY(40px)' }}
-            >
-              <div className="text-orange-500 text-3xl flex justify-center mb-2">{stat.icon}</div>
-              <div className="text-2xl md:text-3xl font-bold text-gray-900">{stat.value}</div>
-              <div className="text-gray-500 text-sm">{stat.label}</div>
-            </div>
-          ))}
-        </div>
+        
 
         {/* Trusted Clients Section */}
         <div className="mb-16">
@@ -202,10 +211,6 @@ const Associations = () => {
               <div className="flex items-start gap-2">
                 <FiCheckCircle className="text-orange-400 mt-0.5 flex-shrink-0" />
                 <p className="text-gray-300 text-sm">Successfully delivered 100+ projects across India</p>
-              </div>
-              <div className="flex items-start gap-2">
-                <FiCheckCircle className="text-orange-400 mt-0.5 flex-shrink-0" />
-                <p className="text-gray-300 text-sm">ISO-certified processes and quality standards</p>
               </div>
               <div className="flex items-start gap-2">
                 <FiCheckCircle className="text-orange-400 mt-0.5 flex-shrink-0" />

@@ -88,10 +88,18 @@ const ContactPage = () => {
                 <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">Organization</label>
                 <input type="text" className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold" placeholder="Company Name" />
               </div>
+              <div className="space-y-3">
+                <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">Email ADDRESS</label>
+                <input type="text" className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold" placeholder="Email" />
+              </div>
+              <div className="space-y-3">
+                <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">Contact NO</label>
+                <input type="text" className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold" placeholder="Phone number" />
+              </div>
 
               <div className="md:col-span-2 space-y-3">
-                <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">Project Overview</label>
-                <textarea rows="5" className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors resize-none text-lg font-bold" placeholder="Describe scope, location, and timeline..."></textarea>
+                <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">Your Query</label>
+                <textarea rows="3" className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors resize-none text-lg font-bold" placeholder="..."></textarea>
               </div>
 
               <div className="md:col-span-2 pt-8">

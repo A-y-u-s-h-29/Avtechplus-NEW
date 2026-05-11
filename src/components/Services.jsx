@@ -140,7 +140,7 @@ const Services = () => {
                 
                 {/* Floating Category Badge */}
                 <div className="absolute bottom-4 left-4">
-                  <span className="bg-orange-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full tracking-tighter">
+                  <span className="bg-orange-300 text-Black text-[12px] font-black uppercase px-3 py-1 rounded-full tracking-tighter">
                     {service.category}
                   </span>
                 </div>
