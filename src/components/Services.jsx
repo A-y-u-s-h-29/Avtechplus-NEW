@@ -96,7 +96,6 @@ const Services = () => {
         
         {/* Header Section */}
         <div className="text-center mb-12">
-          <span className="text-orange-500 font-bold text-sm uppercase tracking-[0.2em]">Our Expertise</span>
           <h1 className="text-3xl md:text-5xl font-black text-gray-900 mt-3 mb-4 uppercase exo">
             Engineering <span className="text-orange-500">& Services</span>
           </h1>

@@ -36,11 +36,6 @@ function App() {
             <>
               <Home />
               <About />
-              <Services />
-              <Vision />
-              <Sectors />
-              <Brands />
-              <InnovationCreativity />
             </>
           }
         />

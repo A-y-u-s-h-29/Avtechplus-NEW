@@ -45,42 +45,9 @@ function Home() {
               solutions with a legacy of precision since 1981.
             </p>
 
-            {/* Feature Tags */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              {[
-                { icon: <FiShield />, text: "Safety First" },
-                { icon: <FiAward />, text: "Quality Driven" },
-                { icon: <FiCheckCircle />, text: "Legacy 1981" },
-                { icon: <FiAward />, text: "EPC Experts" }
-              ].map((item, i) => (
-                <div key={i} className="flex flex-col gap-2 p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                  <span className="text-orange-500 text-xl">{item.icon}</span>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">{item.text}</span>
-                </div>
-              ))}
-            </div>
+            
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-5 mb-10">
-              <a
-                href="tel:+919717293621"
-                className="group flex items-center justify-center gap-4 bg-gray-900 text-white px-10 py-5 rounded-2xl hover:bg-orange-500 transition-all duration-300 font-black uppercase text-sm tracking-widest shadow-2xl"
-              >
-                <FiPhone className="text-orange-500 group-hover:text-white" />
-                Request Consultation
-              </a>
-              <Link
-                to="/services"
-                className="group flex items-center justify-center gap-4 bg-white border-2 border-gray-200 text-gray-900 px-10 py-5 rounded-2xl hover:border-gray-900 transition-all duration-300 font-black uppercase text-sm tracking-widest"
-              >
-                View Portfolio
-                <FiArrowRight className="group-hover:translate-x-2 transition-transform" />
-              </Link>
-            </div>
-
-            <p className="text-gray-400 text-xs font-black uppercase tracking-[0.4em]">
-              Trusted Partner: Reliance • Tata Projects • CPWD • Alstom
-            </p>
+            
           </div>
 
           {/* Right Column: Industrial Slider */}
@@ -139,11 +106,7 @@ function Home() {
               </div>
             </div>
             
-            {/* Years of Experience Floating Card */}
-            <div className="absolute -bottom-6 -left-10 bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 hidden md:block">
-              <p className="text-4xl font-black text-gray-900 mb-1">25+</p>
-              <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">Years of<br/>Expertise</p>
-            </div>
+            
           </div>
           
         </div>

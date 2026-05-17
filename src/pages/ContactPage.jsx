@@ -29,7 +29,7 @@ const ContactPage = () => {
           
           {/* Left Column: HQ Information */}
           <div className="lg:col-span-5 bg-gray-900 p-10 md:p-16 text-white">
-            <h3 className="text-3xl font-black uppercase mb-12 tracking-tight exo">Corporate Office</h3>
+            <h3 className="text-3xl font-black uppercase mb-12 tracking-tight exo">Office</h3>
             
             <div className="space-y-12">
               <div className="flex gap-8">
@@ -37,7 +37,7 @@ const ContactPage = () => {
                   <FiMapPin className="text-orange-500 text-3xl" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-black uppercase text-gray-500 tracking-widest mb-3">Registered Address</h4>
+                  <h4 className="text-xs font-black uppercase text-gray-500 tracking-widest mb-3">Office Address</h4>
                   {/* Increased to text-xl */}
                   <p className="text-gray-200 text-xl leading-relaxed font-bold">
                     C9/9345 – Vasant Kunj New Delhi <br />
@@ -53,7 +53,7 @@ const ContactPage = () => {
                 <div>
                   <h4 className="text-xs font-black uppercase text-gray-500 tracking-widest mb-3">Email Inquiries</h4>
                   {/* Increased to text-2xl */}
-                  <p className="text-white font-black text-2xl"> mesinfa@gmail.com</p>
+                  <p className="text-white font-black text-2xl">info@avtechplus.in, avtechplusllp@gmail.com</p>
                 </div>
               </div>
 
@@ -118,9 +118,6 @@ const ContactPage = () => {
       <footer className="py-20 border-t border-gray-100 text-center">
          <p className="text-xs font-black text-gray-400 uppercase tracking-[0.6em] mb-4">
            Professionalism • Governance • Sustainability
-         </p>
-         <p className="text-lg font-black text-gray-900 uppercase">
-           LLP Identification No: ACV 5839
          </p>
       </footer>
     </div>

@@ -14,8 +14,8 @@ const TurnkeyServices = () => {
       icon: <FiBox />,
     },
     {
-      title: "Execution & Civil Works",
-      desc: "Precision construction of G+3 buildings, townships, GIS substations, and site offices.",
+      title: "Work Execution Management ",
+      desc: "Precision construction of buildings, townships, GIS substations, and site offices.",
       icon: <FiTool />,
     },
     {
@@ -40,16 +40,13 @@ const TurnkeyServices = () => {
           
           {/* Left: The Concept */}
           <div className="lg:w-1/3">
-            <span className="text-orange-600 font-black text-xs uppercase tracking-[0.3em] mb-4 block">
-              EPC Solutions
-            </span>
             <h2 className="text-4xl md:text-5xl font-black text-gray-900 uppercase exo leading-none mb-6">
               Turnkey <span className="text-orange-500 text-outline">Services</span>
             </h2>
             <div className="w-20 h-2 bg-orange-500 mb-8"></div>
             
             <p className="text-gray-600 mb-8 leading-relaxed">
-              AVtech Plus LLP provides comprehensive <strong>Turnkey Solutions</strong> that integrate design, engineering, and execution. By acting as a single point of responsibility, we accelerate value creation for our clients.
+              AVtech Plus LLP provides comprehensive <strong>Turnkey Solutions</strong> that integrate design, engineering, and execution management. By acting as a single point of responsibility, we accelerate value creation for our clients.
             </p>
 
             <div className="space-y-4">
@@ -121,7 +118,7 @@ const TurnkeyServices = () => {
             <div className="space-y-4">
                 <h6 className="font-black text-gray-900 uppercase text-sm tracking-tighter">Instrumental Value Creation</h6>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                    Our turnkey model ensures that every aspect—from soil embankment and bulk material supply (up to 20 Crore) to Site-Mix-Concrete (SMC)—is managed under a unified governance structure. We don't just build; we optimize the entire commercial ecosystem of the project.
+                    Our turnkey model ensures that every aspect—from soil embankment and bulk material supply to Site-Mix-Concrete (SMC)—is managed under a unified governance structure. We don't just build; we optimize the entire commercial ecosystem of the project.
                 </p>
             </div>
             <div className="space-y-4">

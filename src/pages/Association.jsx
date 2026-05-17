@@ -12,7 +12,7 @@ const Associations = () => {
   const trustedClients = [
     { name: "Reliance Industries Limited", sector: "Energy & Infrastructure", icon: "🏭", size: "Fortune 500" },
     { name: "Alstom India Limited", sector: "Rail & Metro", icon: "🚆", size: "Multinational" },
-    { name: "CPWD India", sector: "Government Infrastructure", icon: "🏛️", size: "Central Govt" },
+    { name: "CPWD India", sector: "Government Infrastructure/Real Estate Projects", icon: "🏛️", size: "Central Govt" },
     { name: "Tata Projects Limited", sector: "Construction & Engineering", icon: "🏗️", size: "Industry Leader" },
   ];
 
@@ -57,9 +57,43 @@ const Associations = () => {
 ];
 
   // Industry Associations
-  const industryAssociations = [
-    { name: "CIDC", fullForm: "Real Estate Organisations", focus: "Industry Standards" },
-  ];
+  const technicalCollaborations = [
+  {
+    name: "Nivedita & Uday Pandey",
+    fullForm: "Architects",
+    focus: "Architectural Design"
+  },
+  {
+    name: "NNC India",
+    fullForm: "Structural Consultant",
+    focus: "Structural Engineering"
+  },
+  {
+    name: "STPL Ltd.",
+    fullForm: "Structural Consultant",
+    focus: "Structural Engineering"
+  },
+  {
+    name: "Orrion",
+    fullForm: "Landscaping Consultant",
+    focus: "Landscape Design"
+  },
+  {
+    name: "Behera Associates",
+    fullForm: "MEP Consultant",
+    focus: "MEP Services"
+  },
+  {
+    name: "Sai-Geotec",
+    fullForm: "Geo-technical Investigations & Survey",
+    focus: "Soil Investigation & Survey"
+  },
+  {
+    name: "Foundtek Consultants",
+    fullForm: "Geo-technical Investigations & Survey",
+    focus: "Soil Investigation & Survey"
+  }
+];
 
   // Key Statistics
   const stats = [
@@ -75,12 +109,11 @@ const Associations = () => {
         
         {/* Header Section */}
         <div className="text-center mb-12">
-          <span className="text-orange-500 font-semibold text-sm uppercase tracking-wide">Our Network</span>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-2 mb-3">
             Trusted <span className="text-orange-500">Associations</span>
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Proud to partner with India's most respected organizations and international collaborators
+            Privileged to partner with India's most respected organizations and international collaborators
           </p>
           <div className="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
         </div>
@@ -123,9 +156,54 @@ const Associations = () => {
           </div>
         </div>
 
-        {/* International Partners Section */}
+        {/* Government Associations & Technical Collaborations */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {/* International Partners */}
+          {/* Technical Collaborations - Now on the left */}
+          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
+                <FiAward className="text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">Technical Collaborations</h3>
+            </div>
+            <div className="space-y-3">
+              {technicalCollaborations.map((association, index) => (
+                <div key={index} className="bg-white rounded-xl p-4">
+                  <h4 className="font-bold text-gray-800">{association.name}</h4>
+                  <p className="text-gray-500 text-xs">{association.fullForm}</p>
+                  <span className="inline-block mt-2 text-xs bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full">
+                    {association.focus}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Government Associations - Now on the right */}
+          <div className="bg-gradient-to-r from-green-50 to-teal-50 rounded-2xl p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
+                <FiBriefcase className="text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">Government Associations</h3>
+            </div>
+            <div className="space-y-3">
+              {governmentAssociations.map((association, index) => (
+                <div key={index} className="bg-white rounded-xl p-4">
+                  <h4 className="font-bold text-gray-800">{association.name}</h4>
+                  <p className="text-gray-500 text-xs">{association.fullForm}</p>
+                  <span className="inline-block mt-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded-full">
+                    {association.focus}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* International Partners & Our Credentials */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* International Partners - Now on the left */}
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
@@ -150,52 +228,7 @@ const Associations = () => {
             </div>
           </div>
 
-          {/* Government Associations */}
-          <div className="bg-gradient-to-r from-green-50 to-teal-50 rounded-2xl p-6">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
-                <FiBriefcase className="text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900">Government Associations</h3>
-            </div>
-            <div className="space-y-3">
-              {governmentAssociations.map((association, index) => (
-                <div key={index} className="bg-white rounded-xl p-4">
-                  <h4 className="font-bold text-gray-800">{association.name}</h4>
-                  <p className="text-gray-500 text-xs">{association.fullForm}</p>
-                  <span className="inline-block mt-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded-full">
-                    {association.focus}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Industry Associations & Trust Statement */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {/* Industry Associations */}
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
-                <FiAward className="text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900">Industry Associations</h3>
-            </div>
-            <div className="space-y-3">
-              {industryAssociations.map((association, index) => (
-                <div key={index} className="bg-white rounded-xl p-4">
-                  <h4 className="font-bold text-gray-800">{association.name}</h4>
-                  <p className="text-gray-500 text-xs">{association.fullForm}</p>
-                  <span className="inline-block mt-2 text-xs bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full">
-                    {association.focus}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Trust Statement */}
+          {/* Trust Statement / Our Credentials - Now on the right */}
           <div className="bg-gray-900 rounded-2xl p-6 text-white">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">

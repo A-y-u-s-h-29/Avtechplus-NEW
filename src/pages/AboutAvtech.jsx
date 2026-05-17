@@ -5,20 +5,10 @@ import Vision from "../components/Vision";
 const AboutAvtech = () => {
   const highlights = [
     {
-      icon: <FiBriefcase className="w-6 h-6" />,
-      title: "Incorporated Excellence",
-      description: "Formally incorporated in 2009, bringing together decades of individual engineering mastery under one corporate banner."
-    },
-    {
       icon: <FiCpu className="w-6 h-6" />,
-      title: "Techno-Commercial Mastery",
+      title: "Techno-Commercial Expertise",
       description: "Experts in bridging the gap between complex engineering design and commercial project feasibility."
     },
-    {
-      icon: <FiUsers className="w-6 h-6" />,
-      title: "Chartered Leadership",
-      description: "Led by Experienced Engineers with specialized experience in EPC and Government contracts."
-    }
   ];
 
   return (
@@ -68,12 +58,9 @@ const AboutAvtech = () => {
               
               <div className="space-y-6">
                 <p className="text-gray-700 text-xl font-bold leading-relaxed">
-                  AVtech Plus LLP is a specialized consultancy firm providing techno-commercial expertise for large-scale infrastructure and industrial projects.
+                  AVtech Plus LLP is a specialized consultancy firm providing techno-commercial expertise for Building, Infrastructure and Industrial Projects.
                 </p>
                 
-                <p className="text-gray-500 text-base leading-relaxed">
-                  Established in 2009, we operate at the intersection of civil engineering and strategic project management. Our team comprises Chartered Engineers and veterans who have successfully handled projects for **Fortune 500 companies** and **Government bodies**, ensuring that every construction milestone is met with transparency and technical precision.
-                </p>
               </div>
             </div>
 
@@ -123,8 +110,6 @@ const AboutAvtech = () => {
             </div>
           ))}
         </div>
-        
-        <Vision />
       </div>
     </section>
   );
