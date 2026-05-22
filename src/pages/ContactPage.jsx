@@ -1,11 +1,11 @@
 import React from 'react';
-import { FiMail, FiPhone, FiMapPin, FiSend, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiSend, FiLinkedin, FiTwitter ,FiGlobe} from 'react-icons/fi';
 
 const ContactPage = () => {
   return (
     <div className="min-h-screen bg-white exo">
       {/* --- HERO SECTION: LARGER TEXT --- */}
-      <div className="relative h-[450px] bg-gray-900 overflow-hidden">
+      <div className="relative h-[450px] bg-[#232F72] overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto h-full flex flex-col justify-center px-5 md:px-8">
@@ -28,7 +28,7 @@ const ContactPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 shadow-2xl rounded-[2rem] overflow-hidden bg-white border border-gray-100">
           
           {/* Left Column: HQ Information */}
-          <div className="lg:col-span-5 bg-gray-900 p-10 md:p-16 text-white">
+          <div className="lg:col-span-5 bg-[#232F72] p-10 md:p-16 text-white">
             <h3 className="text-3xl font-black uppercase mb-12 tracking-tight exo">Office</h3>
             
             <div className="space-y-12">
@@ -56,6 +56,22 @@ const ContactPage = () => {
                   <p className="text-white font-black text-2xl">info@avtechplus.in, avtechplusllp@gmail.com</p>
                 </div>
               </div>
+
+              <div className="flex gap-8">
+  <div className="flex-shrink-0 w-16 h-16 bg-orange-500/10 border border-orange-500/20 rounded-2xl flex items-center justify-center">
+    <FiGlobe className="text-orange-500 text-3xl" />
+  </div>
+
+  <div>
+    <h4 className="text-xs font-black uppercase text-gray-500 tracking-widest mb-3">
+      Website
+    </h4>
+
+    <p className="text-white font-black text-2xl">
+      www.avtech.com
+    </p>
+  </div>
+</div>
 
               <div className="flex gap-8">
                 <div className="flex-shrink-0 w-16 h-16 bg-orange-500/10 border border-orange-500/20 rounded-2xl flex items-center justify-center">

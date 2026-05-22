@@ -22,7 +22,7 @@ const Vision = () => {
         </div>
 
         {/* About Section with Text Left and Images Right */}
-        <div className="grid lg:grid-cols-2 gap-10 items-start mb-16 m-14">
+        <div className="grid lg:grid-cols-2 gap-4 items-start mb-16 m-14">
           {/* Left Side - About Text */}
           <div>
             <div className="mb-6">
@@ -55,34 +55,26 @@ const Vision = () => {
           <div className="flex flex-col items-center gap-8">
             {/* First Circle Image */}
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-orange-500 shadow-2xl">
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden  ">
                 <img 
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=400&fit=crop" 
+                  src="/images/OUR VISION.png" 
                   alt="Construction Project"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-3 -right-3 bg-orange-500 rounded-full p-3 shadow-lg">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
+              
             </div>
 
             {/* Second Circle Image */}
             <div className="relative">
-              <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-orange-500 shadow-2xl">
+              <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden ">
                 <img 
-                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=400&fit=crop" 
+                  src="/images/OUR MISSION.png" 
                   alt="Engineering Team"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-3 -left-3 bg-orange-500 rounded-full p-3 shadow-lg">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z" />
-                </svg>
-              </div>
+             
             </div>
           </div>
         </div>
