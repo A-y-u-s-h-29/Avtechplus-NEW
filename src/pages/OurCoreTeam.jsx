@@ -9,7 +9,7 @@ const CoreLeadership = () => {
     bio: "A seasoned senior management professional with over 30 years of diverse experience across prestigious organizations. Mr. Khurana has successfully led and completed landmark projects throughout India, bringing invaluable expertise and leadership to AVtech Plus LLP.",
     expertise: [
       "Project Management",
-      "Contracts",
+      "Contract Management",
       "Modern Construction Methodologies",
       "Resource Planning"
     ]
@@ -117,7 +117,7 @@ const CoreLeadership = () => {
           <div className="flex justify-center">
             
             <div className="w-full max-w-4xl">
-              <div className="mt-6 bg-gray-900 rounded-lg p-6">
+              <div className="mt-6 bg-[#232F72] rounded-lg p-6">
                 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-5 text-center">
                   

@@ -120,7 +120,7 @@ const ContactPage = () => {
 
               <div className="md:col-span-2 pt-8">
                 {/* Button text increased to text-sm/base and padding increased */}
-                <button className="group w-full md:w-auto flex items-center justify-center gap-6 bg-gray-900 text-white px-16 py-6 font-black uppercase text-base tracking-[0.3em] hover:bg-orange-500 transition-all rounded-2xl shadow-2xl">
+                <button className="group w-full md:w-auto flex items-center justify-center gap-6 bg-[#306D29] text-white px-16 py-6 font-black uppercase text-base tracking-[0.3em] hover:bg-[#5B7E3C] transition-all rounded-2xl shadow-2xl">
                   <FiSend className="text-orange-500 group-hover:text-white text-xl" />
                   Transmit Inquiry
                 </button>

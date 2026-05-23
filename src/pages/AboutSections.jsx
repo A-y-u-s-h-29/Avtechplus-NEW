@@ -97,7 +97,7 @@ const AboutSections = () => {
                     <div className="w-4 h-4 sm:w-5 sm:h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="text-white text-[10px] sm:text-xs font-bold">✓</span>
                     </div>
-                    <p className="text-gray-700 text-sm sm:text-base">Sufficient Hardware: 12 Laptops and 22 Window, Plotter & Printer: 08 Nos.</p>
+                    <p className="text-gray-700 text-sm sm:text-base">Sufficient Hardware: 06 Laptops and 02 Window, Plotter & Printer: 04 Nos.</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-4 h-4 sm:w-5 sm:h-5 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">

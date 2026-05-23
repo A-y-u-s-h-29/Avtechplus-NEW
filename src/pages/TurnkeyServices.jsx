@@ -5,7 +5,7 @@ const TurnkeyServices = () => {
   const servicePhases = [
     {
       title: "Conceptualization & Design",
-      desc: "Architectural planning, structural design, and method engineering customized for industrial requirements.",
+      desc: "Site survey, Soil investigation,Architectural planning, structural design, and method engineering customized for industrial requirements, documentation for statutory approvals etc.",
       icon: <FiCpu />,
     },
     {
@@ -22,6 +22,11 @@ const TurnkeyServices = () => {
       title: "Quality & Governance",
       desc: "Strict adherence to safety standards and high-governance project management protocols.",
       icon: <FiShield />,
+    },
+    {
+      title: "COMPLETION & OCCUPATION",
+      desc: "Documentation for CC, OC, Electrical, sewerage and water supply connections, CTO etc.",
+      icon: <FiBox />,
     }
   ];
 

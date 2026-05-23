@@ -35,6 +35,10 @@ const Footer = () => {
               <a href="mailto:info@avtechplus.in" className="flex items-center gap-2 text-sm text-gray-300 hover:text-orange-500 transition-colors">
                 <FiMail className="text-orange-500" /> info@avtechplus.in
               </a>
+               <a href="mailto:info@avtechplus.in" className="flex items-center gap-2 text-sm text-gray-300 hover:text-orange-500 transition-colors">
+                <FiMail className="text-orange-500" /> avtechplusllp@gmail.com
+              </a>
+              
               <a href="https://www.avtechplus.in" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-gray-300 hover:text-orange-500 transition-colors">
                 <FiGlobe className="text-orange-500" /> www.avtechplus.in
               </a>
