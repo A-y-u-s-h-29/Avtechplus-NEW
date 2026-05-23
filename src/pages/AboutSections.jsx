@@ -224,13 +224,17 @@ const AboutSections = () => {
 
         {/* Happy to Serve You Section */}
         <div className="my-8 sm:my-12 md:my-16 lg:my-20">
+              <div className="text-center mb-6 sm:mb-8 md:mb-10">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 sm:mb-4">
+              HAPPY TO <span className="text-orange-500">SERVE YOU</span>
+            </h2>
+            <div className="w-16 sm:w-20 md:w-24 h-0.5 sm:h-1 bg-orange-500 mx-auto"></div>
+          </div>
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            
             {/* Left Side - Heading */}
             <div className="text-center md:text-left px-4 md:px-0">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 sm:mb-4">
-                HAPPY TO <span className="text-orange-500">SERVE YOU</span>
-              </h2>
-              <div className="w-20 sm:w-24 h-0.5 sm:h-1 bg-orange-500 mx-auto md:mx-0 mt-3 sm:mt-4"></div>
+              
               <p className="text-gray-600 text-base sm:text-lg mt-4 sm:mt-6 max-w-md mx-auto md:mx-0">
                 Committed to delivering excellence and building lasting relationships with our valued clients.
               </p>
