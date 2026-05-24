@@ -31,7 +31,7 @@ const Footer = () => {
               </h3>
             </div>
             
-            <div className="flex flex-col items-center space-y-2 pt-2">
+            <div className="flex flex-col items-start space-y-2 pt-2 pl-20">
               <a href="mailto:info@avtechplus.in" className="flex items-center gap-2 text-sm text-gray-300 hover:text-orange-500 transition-colors">
                 <FiMail className="text-orange-500" /> info@avtechplus.in
               </a>

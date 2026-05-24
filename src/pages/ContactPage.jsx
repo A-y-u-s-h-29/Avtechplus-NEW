@@ -5,7 +5,7 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-white exo">
       {/* --- HERO SECTION: LARGER TEXT --- */}
-      <div className="relative h-[450px] bg-[#232F72] overflow-hidden">
+      <div className="relative h-[480px] bg-[#232F72] overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto h-full flex flex-col justify-center px-5 md:px-8">
@@ -24,7 +24,7 @@ const ContactPage = () => {
       </div>
 
       {/* --- MAIN CONTENT BOX --- */}
-      <main className="max-w-7xl mx-auto px-5 md:px-8 -mt-24 pb-20 relative z-20">
+      <main className="max-w-7xl mx-auto px-5 md:px-8 mt-20 pb-20 relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 shadow-2xl rounded-[2rem] overflow-hidden bg-white border border-gray-100">
           
           {/* Left Column: HQ Information */}
@@ -68,7 +68,7 @@ const ContactPage = () => {
     </h4>
 
     <p className="text-white font-black text-2xl">
-      www.avtech.com
+      www.avtechplus.in
     </p>
   </div>
 </div>
@@ -93,39 +93,106 @@ const ContactPage = () => {
               <p className="text-gray-500 text-lg font-medium">Please provide your technical requirements for a priority consultation.</p>
             </div>
 
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div className="space-y-3">
-                <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">Full Name</label>
-                {/* Increased to text-lg and py-4 */}
-                <input type="text" className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold" placeholder="Your Name" />
-              </div>
-              
-              <div className="space-y-3">
-                <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">Organization</label>
-                <input type="text" className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold" placeholder="Company Name" />
-              </div>
-              <div className="space-y-3">
-                <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">Email ADDRESS</label>
-                <input type="text" className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold" placeholder="Email" />
-              </div>
-              <div className="space-y-3">
-                <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">Contact NO</label>
-                <input type="text" className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold" placeholder="Phone number" />
-              </div>
+            <form
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  className="grid grid-cols-1 md:grid-cols-2 gap-10"
+>
+  {/* Replace with your Web3Forms Access Key */}
+  <input
+    type="hidden"
+    name="access_key"
+    value="cb1d11bc-66b4-4107-89e4-d46b02a88c25"
+  />
 
-              <div className="md:col-span-2 space-y-3">
-                <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">Your Query</label>
-                <textarea rows="3" className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors resize-none text-lg font-bold" placeholder="..."></textarea>
-              </div>
+  {/* Optional */}
+  <input
+    type="hidden"
+    name="subject"
+    value="New Project Inquiry"
+  />
 
-              <div className="md:col-span-2 pt-8">
-                {/* Button text increased to text-sm/base and padding increased */}
-                <button className="group w-full md:w-auto flex items-center justify-center gap-6 bg-[#306D29] text-white px-16 py-6 font-black uppercase text-base tracking-[0.3em] hover:bg-[#5B7E3C] transition-all rounded-2xl shadow-2xl">
-                  <FiSend className="text-orange-500 group-hover:text-white text-xl" />
-                  Transmit Inquiry
-                </button>
-              </div>
-            </form>
+  <input
+    type="hidden"
+    name="from_name"
+    value="AVTECH PLUS Website"
+  />
+
+  <div className="space-y-3">
+    <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">
+      Full Name
+    </label>
+
+    <input
+      type="text"
+      name="name"
+      required
+      className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold"
+      placeholder="Your Name"
+    />
+  </div>
+
+  <div className="space-y-3">
+    <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">
+      Organization
+    </label>
+
+    <input
+      type="text"
+      name="company"
+      className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold"
+      placeholder="Company Name"
+    />
+  </div>
+
+  <div className="space-y-3">
+    <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">
+      Email ADDRESS
+    </label>
+
+    <input
+      type="email"
+      name="email"
+      required
+      className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold"
+      placeholder="Email"
+    />
+  </div>
+
+  <div className="space-y-3">
+    <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">
+      Contact NO
+    </label>
+
+    <input
+      type="text"
+      name="phone"
+      className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors text-lg font-bold"
+      placeholder="Phone number"
+    />
+  </div>
+
+  <div className="md:col-span-2 space-y-3">
+    <label className="text-xs font-black uppercase text-gray-400 tracking-[0.2em]">
+      Your Query
+    </label>
+
+    <textarea
+      rows="3"
+      name="message"
+      required
+      className="w-full bg-gray-50 border-b-4 border-gray-100 py-4 px-0 focus:outline-none focus:border-orange-500 transition-colors resize-none text-lg font-bold"
+      placeholder="..."
+    ></textarea>
+  </div>
+
+  <div className="md:col-span-2 pt-8">
+    <button className="group w-full md:w-auto flex items-center justify-center gap-6 bg-[#306D29] text-white px-16 py-6 font-black uppercase text-base tracking-[0.3em] hover:bg-[#5B7E3C] transition-all rounded-2xl shadow-2xl">
+      <FiSend className="text-orange-500 group-hover:text-white text-xl" />
+      Transmit Inquiry
+    </button>
+  </div>
+</form>
           </div>
         </div>
       </main>

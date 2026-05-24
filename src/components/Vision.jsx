@@ -55,7 +55,7 @@ const Vision = () => {
           <div className="flex flex-col items-center gap-8">
             {/* First Circle Image */}
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden  ">
+              <div className="w-84 h-84 md:w-90 md:h-90 rounded-full overflow-hidden  ">
                 <img 
                   src="/images/OUR VISION.png" 
                   alt="Construction Project"
@@ -67,7 +67,7 @@ const Vision = () => {
 
             {/* Second Circle Image */}
             <div className="relative">
-              <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden ">
+              <div className="w-84 h-84 md:w-90 md:h-90 rounded-full overflow-hidden ">
                 <img 
                   src="/images/OUR MISSION.png" 
                   alt="Engineering Team"
