@@ -105,23 +105,27 @@ const ForensicAuditService = () => {
         "Analysis of 3-M policy",
         "Mitigation plan",
       ],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/audit (2).jpeg"
     },
   ];
 
   return (
     <section className="bg-white">
       {/* 1. IMAGE WITH WHITE SPACE (No Heading) */}
-      <div className="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-20">
-        <div className="rounded-3xl overflow-hidden shadow-2xl">
-          <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-            alt="Forensic Audit Infrastructure Project"
-            className="w-full h-auto object-cover"
-            style={{ maxHeight: "600px" }}
-          />
-        </div>
-      </div>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-30 md:py-30">
+  <div className="rounded-3xl overflow-hidden ">
+    <img
+      src="/images/MAIN.png"
+      alt="Forensic Audit Infrastructure Project"
+      className="w-full h-auto object-contain"
+      style={{ 
+        maxHeight: "90vh",
+        objectFit: "contain"
+      }}
+      loading="eager"
+    />
+  </div>
+</div>
 
       {/* 2. TEXT LEFT / IMAGE RIGHT SECTION */}
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-8 md:py-16">
@@ -176,16 +180,15 @@ const ForensicAuditService = () => {
           </div>
 
           {/* RIGHT: Image */}
-          <div className="relative group sticky top-8">
-            <div className="absolute -inset-4 bg-orange-50 rounded-2xl -z-10 group-hover:bg-orange-100 transition-colors duration-500"></div>
-            <div className="bg-gray-200 rounded-xl overflow-hidden shadow-xl border-4 border-white">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-                alt="Audit Risk Analysis Dashboard"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </div>
+<div className="relative group sticky top-8 flex justify-center">
+  <div className=" rounded-full overflow-hidden shadow-xl border-4 border-white w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px]">
+    <img
+      src="/images/audit (1).jpeg"
+      alt="Audit Risk Analysis Dashboard"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
         </div>
       </div>
 
