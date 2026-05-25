@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ForensicAuditService from "./ForensicAuditService"; // Import the forensic audit component
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState("all");
@@ -90,6 +91,11 @@ const Services = () => {
     ? services 
     : services.filter(service => service.category === activeTab);
 
+  // Check if Audit & Risk tab is active - show the forensic audit component
+  if (activeTab === "audit") {
+    return <ForensicAuditService />;
+  }
+
   return (
     <div className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
@@ -135,11 +141,14 @@ const Services = () => {
                   src={service.image} 
                   alt={service.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  onError={(e) => {
+                    e.target.src = "https://via.placeholder.com/400x300?text=Service+Image";
+                  }}
                 />
                 
                 {/* Floating Category Badge */}
                 <div className="absolute bottom-4 left-4">
-                  <span className="bg-orange-300 text-Black text-[12px] font-black uppercase px-3 py-1 rounded-full tracking-tighter">
+                  <span className="bg-orange-300 text-black text-[12px] font-black uppercase px-3 py-1 rounded-full tracking-tighter">
                     {service.category}
                   </span>
                 </div>
@@ -171,9 +180,6 @@ const Services = () => {
             </div>
           ))}
         </div>
-
-        
-
       </div>
     </div>
   );

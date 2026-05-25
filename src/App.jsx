@@ -22,6 +22,7 @@ import { Contact } from "lucide-react";
 import ContactPage from "./pages/ContactPage";
 import TurnkeyServices from "./pages/TurnkeyServices";
 import AboutSections from "./pages/AboutSections";
+import ForensicAuditService from "./pages/ForensicAuditService";
 
 function App() {
   return (
@@ -59,7 +60,8 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/services" element={<Services />} />
-        <Route path="turnkey-services" element={<TurnkeyServices />} />
+        <Route path="/turnkey-services" element={<TurnkeyServices />} />
+        <Route path="/audit-risk" element={<ForensicAuditService />} />
 
       </Routes>
       
