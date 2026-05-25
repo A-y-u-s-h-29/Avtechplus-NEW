@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import ForensicAuditService from "./ForensicAuditService"; // Import the forensic audit component
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState("all");
+  const navigate = useNavigate();
 
   const services = [
     {
@@ -91,10 +92,13 @@ const Services = () => {
     ? services 
     : services.filter(service => service.category === activeTab);
 
-  // Check if Audit & Risk tab is active - show the forensic audit component
-  if (activeTab === "audit") {
-    return <ForensicAuditService />;
-  }
+  const handleTabClick = (categoryId) => {
+    if (categoryId === "audit") {
+      navigate("/audit-risk");
+    } else {
+      setActiveTab(categoryId);
+    }
+  };
 
   return (
     <div className="bg-white py-16 md:py-24">
@@ -116,9 +120,11 @@ const Services = () => {
           {categories.map((category) => (
             <button
               key={category.id}
-              onClick={() => setActiveTab(category.id)}
+              onClick={() => handleTabClick(category.id)}
               className={`px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest transition-all duration-300 border-2 ${
-                activeTab === category.id
+                activeTab === category.id && category.id !== "audit"
+                  ? "bg-orange-500 border-orange-500 text-white shadow-lg"
+                  : activeTab === "all" && category.id === "all"
                   ? "bg-orange-500 border-orange-500 text-white shadow-lg"
                   : "bg-transparent border-gray-200 text-gray-500 hover:border-orange-500 hover:text-orange-500"
               }`}
