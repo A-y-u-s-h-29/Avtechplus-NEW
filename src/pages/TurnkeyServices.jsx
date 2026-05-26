@@ -69,18 +69,20 @@ const TurnkeyServices = () => {
             </p>
 
             <div className="space-y-4">
-              {highlights.map((text, i) => (
-                <div key={i} className="grid grid-cols-1 gap-3">
-                  <div className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center">
-                    <FiCheckCircle className="text-orange-600 text-xs" />
-                  </div>
+  {highlights.map((text, i) => (
+    <div key={i} className="flex items-start justify-start gap-3">
+      {/* Icon Wrapper: Added shrink-0 so it doesn't squash on multi-line text */}
+      <div className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-0.5">
+        <FiCheckCircle className="text-orange-600 text-xs" />
+      </div>
 
-                  <span className="text-xs font-black text-gray-800 uppercase tracking-tight">
-                    {text}
-                  </span>
-                </div>
-              ))}
-            </div>
+      {/* Text Wrapper: Changed text-xs to something readable, removed font-black and uppercase unless you specifically want block headers */}
+      <span className="text-sm font-medium text-gray-700 leading-tight">
+        {text}
+      </span>
+    </div>
+  ))}
+</div>
           </div>
 
           {/* Right: The Service Grid */}
