@@ -15,7 +15,7 @@ const ForensicAuditService = () => {
         "Bid Evaluation Issues",
         "Negotiations and terms & conditions amendments",
       ],
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/contact.png"
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const ForensicAuditService = () => {
         "Same invoice billed multiple times",
         "Excess rates of extra/substituted items",
       ],
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/payment-method.png"
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const ForensicAuditService = () => {
         "Related-party transactions",
         "Diversion of funds to unrelated entities",
       ],
-      image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/bank.png"
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ const ForensicAuditService = () => {
         "Collusion between employees & suppliers",
         "Materials quantity and quality issues",
       ],
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/contact.png"
     },
     {
       id: 5,
@@ -58,13 +58,13 @@ const ForensicAuditService = () => {
         "Idle equipment billed as active",
         "Improper/deficient site records",
       ],
-      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/contact.png"
     },
     {
       id: 6,
       title: "Quantity & Measurement Verification",
       redFlags: ["Inflated quantities", "Duplicate measurements"],
-      image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/contact.png"
     },
     {
       id: 7,
@@ -73,7 +73,7 @@ const ForensicAuditService = () => {
         "Artificial delays to justify escalation",
         "Weak contract enforcement",
       ],
-      image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/contact.png"
     },
     {
       id: 8,
@@ -82,19 +82,19 @@ const ForensicAuditService = () => {
         "Staff not trained for compliances",
         "Conditions of approvals not implemented",
       ],
-      image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/contact.png"
     },
     {
       id: 9,
       title: "Documentation Review",
       redFlags: ["Missing or forged documents", "Backdated approvals"],
-      image: "https://images.unsplash.com/photo-1554224154-26032ffc0c07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/contact.png"
     },
     {
       id: 10,
       title: "Employee & Stakeholder Investigation",
       redFlags: ["Conflict of interest", "Kickbacks / bribery evidence"],
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/images/contact.png"
     },
     {
       id: 11,
