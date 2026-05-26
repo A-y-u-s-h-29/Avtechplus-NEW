@@ -35,6 +35,7 @@ const TurnkeyServices = () => {
       title: "COMPLETION & OCCUPATION",
       desc: "Documentation for CC, OC, Electrical, sewerage and water supply connections, CTO etc.",
       icon: <FiClipboard />,
+      image: "/images/completed-task.png", // Added your path safely inside the object
     },
   ];
 
@@ -92,8 +93,17 @@ const TurnkeyServices = () => {
                 <div
                   className="group p-8 border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-2xl hover:border-orange-500 transition-all duration-500 relative"
                 >
-                  <div className="text-4xl text-gray-300 group-hover:text-orange-500 mb-6 transition-colors duration-300">
-                    {phase.icon}
+                  <div className="text-4xl text-gray-300 group-hover:text-orange-500 mb-6 transition-colors duration-300 flex items-center justify-between">
+                    {/* Shows the custom image layout if phase has an image, otherwise falls back to standard icon */}
+                    {phase.image ? (
+                      <img 
+                        src={phase.image} 
+                        alt={phase.title} 
+                        className="w-10 h-10 object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" 
+                      />
+                    ) : (
+                      phase.icon
+                    )}
                   </div>
 
                   <div className="absolute top-8 right-8 text-4xl font-black text-gray-100 group-hover:text-orange-500/10 transition-colors">
@@ -149,7 +159,7 @@ const TurnkeyServices = () => {
 ))}
 
 
-                 {/* General Capabilities Info Card */}
+                   {/* General Capabilities Info Card */}
             <div className="md:col-span-2 mt-4 p-8 bg-orange-500 text-white flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="max-w-md">
                 <h5 className="font-black uppercase exo text-lg leading-tight">
