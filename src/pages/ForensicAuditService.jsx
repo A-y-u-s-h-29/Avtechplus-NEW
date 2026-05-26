@@ -3,8 +3,10 @@ import {
   FiCheckCircle,
   FiPhoneCall,
 } from "react-icons/fi";
-
+import { useNavigate } from "react-router-dom"
 const ForensicAuditService = () => {
+
+  const navigate = useNavigate();
   const auditPoints = [
     {
       id: 1,
@@ -205,7 +207,7 @@ const ForensicAuditService = () => {
             </div>
 
             <p className="text-gray-700 leading-relaxed">
-              A Forensic Audit for Infrastructure Projects in India is a specialized audit aimed at detecting fraud, misappropriation, corruption, cost overruns, contractual violations, and inefficiencies in large capital-intensive projects like roads, railways, power plants, warehouses, and EPC works. Forensic Audit is highly relevant— especially for projects involving capex, vendors, logistics contracts, and publicprivate partnerships (PPP).
+              A Forensic Audit for Infrastructure Projects in India is a specialized audit aimed at detecting fraud, misappropriation, corruption, cost overruns, contractual violations, and inefficiencies in large capital-intensive projects like roads, railways, power plants, warehouses, and EPC works. <br />Forensic Audit is highly relevant— especially for projects involving capex, vendors, logistics contracts, and publicprivate partnerships (PPP).
             </p>
 
             <div className="bg-gray-50 p-6 rounded-2xl space-y-3 border-l-4 border-orange-500">
@@ -344,15 +346,21 @@ const ForensicAuditService = () => {
                   </div>
 
                   {/* RIGHT half: Keeps image positioned on the right half side */}
-                  <div className="flex-1 w-full flex justify-center items-center p-6 lg:p-12 bg-gray-50/50 lg:bg-transparent">
-                    <div className="w-full max-w-[180px] md:max-w-[200px] lg:max-w-[220px] overflow-hidden rounded-lg shadow-lg">
-                      <img
-                        src={point.image}
-                        alt={point.title}
-                        className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                    </div>
-                  </div>
+<div className="flex-1 w-full flex justify-center items-center p-6 lg:p-12 bg-gray-50/50 lg:bg-transparent">
+  <div 
+    className={`w-full overflow-hidden rounded-lg ${
+      point.id === 11 
+        ? "max-w-[320px] md:max-w-[380px] lg:max-w-[450px]" 
+        : "max-w-[180px] md:max-w-[200px] lg:max-w-[220px]"
+    }`}
+  >
+    <img
+      src={point.image}
+      alt={point.title}
+      className="w-full h-auto object-cover"
+    />
+  </div>
+</div>
 
                 </div>
               </div>
@@ -376,9 +384,12 @@ const ForensicAuditService = () => {
                 Contact AVtech Plus LLP for a comprehensive Forensic Audit tailored to protect your infrastructure
                 investment.
               </p>
-              <button className="mt-4 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-md transition-colors duration-300 uppercase text-sm tracking-wider">
-                Request a Consultation
-              </button>
+             <button 
+  onClick={() => navigate("/contact")}
+  className="mt-4 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-md transition-colors duration-300 uppercase text-sm tracking-wider"
+>
+  Request a Consultation
+</button>
             </div>
           </div>
         </div>
