@@ -255,7 +255,7 @@ const ForensicAuditService = () => {
 
           {/* RIGHT: Image */}
           <div className="relative group sticky top-8 flex justify-center">
-            <div className="rounded-full overflow-hidden shadow-xl border-4 border-white 
+            <div className="rounded-full overflow-hidden border-4 border-white 
                             w-48 h-48 
                             xs:w-56 xs:h-56 
                             sm:w-64 sm:h-64 
