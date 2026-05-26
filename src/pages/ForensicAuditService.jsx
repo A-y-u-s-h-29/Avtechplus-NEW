@@ -47,7 +47,7 @@ const ForensicAuditService = () => {
         "Collusion between employees & suppliers",
         "Materials quantity and quality issues",
       ],
-      image: "/images/contact.png"
+      image: "/images/box.png"
     },
     {
       id: 5,
@@ -58,13 +58,13 @@ const ForensicAuditService = () => {
         "Idle equipment billed as active",
         "Improper/deficient site records",
       ],
-      image: "/images/contact.png"
+      image: "/images/construction.png"
     },
     {
       id: 6,
       title: "Quantity & Measurement Verification",
       redFlags: ["Inflated quantities", "Duplicate measurements"],
-      image: "/images/contact.png"
+      image: "/images/benchmark.png"
     },
     {
       id: 7,
@@ -73,7 +73,7 @@ const ForensicAuditService = () => {
         "Artificial delays to justify escalation",
         "Weak contract enforcement",
       ],
-      image: "/images/contact.png"
+      image: "/images/calendar.png"
     },
     {
       id: 8,
@@ -82,19 +82,19 @@ const ForensicAuditService = () => {
         "Staff not trained for compliances",
         "Conditions of approvals not implemented",
       ],
-      image: "/images/contact.png"
+      image: "/images/approved.png"
     },
     {
       id: 9,
       title: "Documentation Review",
       redFlags: ["Missing or forged documents", "Backdated approvals"],
-      image: "/images/contact.png"
+      image: "/images/documents.png"
     },
     {
       id: 10,
       title: "Employee & Stakeholder Investigation",
       redFlags: ["Conflict of interest", "Kickbacks / bribery evidence"],
-      image: "/images/contact.png"
+      image: "/images/two-people.png"
     },
     {
       id: 11,
