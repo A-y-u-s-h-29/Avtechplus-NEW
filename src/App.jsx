@@ -23,6 +23,7 @@ import ContactPage from "./pages/ContactPage";
 import TurnkeyServices from "./pages/TurnkeyServices";
 import AboutSections from "./pages/AboutSections";
 import ForensicAuditService from "./pages/ForensicAuditService";
+import CapabilityDocument from "./pages/CapabilityDocument";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/turnkey-services" element={<TurnkeyServices />} />
         <Route path="/audit-risk" element={<ForensicAuditService />} />
+        <Route path="/capability-document" element={<CapabilityDocument />} />
 
       </Routes>
       

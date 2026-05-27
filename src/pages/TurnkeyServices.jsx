@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   FiBox,
   FiTrendingUp,
@@ -10,6 +11,7 @@ import {
 } from "react-icons/fi";
 
 const TurnkeyServices = () => {
+   const navigate = useNavigate();
   const servicePhases = [
     {
       title: "Conceptualization & Design",
@@ -171,9 +173,12 @@ const TurnkeyServices = () => {
                 </p>
               </div>
 
-              <button className="whitespace-nowrap px-8 py-3 bg-gray-900 hover:bg-black text-white font-black uppercase text-xs tracking-[0.2em] transition-all">
-                View Capability Document
-              </button>
+              <button
+      onClick={() => navigate("/capability-document")}
+      className="whitespace-nowrap px-8 py-3 bg-gray-900 hover:bg-black text-white font-black uppercase text-xs tracking-[0.2em] transition-all"
+    >
+      View Capability Document
+    </button>
             </div>
         </div>
 
