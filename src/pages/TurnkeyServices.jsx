@@ -17,27 +17,31 @@ const TurnkeyServices = () => {
       title: "Conceptualization & Design",
       desc: "Site survey, Soil investigation,Architectural planning, structural design, and method engineering customized for industrial requirements, documentation for statutory approvals etc.",
       icon: <FiCpu />,
+      image: "/images/done1 (5).png",
     },
     {
       title: "Procurement & SCM",
       desc: "Leveraging our centralized SCM experts for bulk material supply and resource optimization.",
       icon: <FiBox />,
+      image: "/images/done1 (4).png",
     },
     {
       title: "Work Execution Management ",
       desc: "Precision construction of buildings, townships, GIS substations, and site offices.",
       icon: <FiTool />,
+      image: "/images/done1 (3).png",
     },
     {
       title: "Quality & Governance",
       desc: "Strict adherence to safety standards and high-governance project management protocols.",
       icon: <FiShield />,
+      image: "/images/done1 (2).png",
     },
     {
       title: "COMPLETION & OCCUPATION",
       desc: "Documentation for CC, OC, Electrical, sewerage and water supply connections, CTO etc.",
       icon: <FiClipboard />,
-      image: "/images/completed-task.png", // Added your path safely inside the object
+      image: "/images/done1 (1).png", // Added your path safely inside the object
     },
   ];
 
@@ -89,7 +93,7 @@ const TurnkeyServices = () => {
           </div>
 
           {/* Right: The Service Grid */}
-          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             {servicePhases.map((phase, index) => (
               <React.Fragment key={index}>
                 <div
@@ -101,7 +105,7 @@ const TurnkeyServices = () => {
                       <img 
                         src={phase.image} 
                         alt={phase.title} 
-                        className="w-10 h-10 object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" 
+                        className="w-10 h-10 object-contain  group-hover:opacity-80 transition-all duration-300" 
                       />
                     ) : (
                       phase.icon
@@ -120,13 +124,7 @@ const TurnkeyServices = () => {
                     {phase.desc}
                   </p>
 
-                  <div className="mt-8 flex items-center gap-2">
-                    <div className="h-px w-8 bg-orange-500"></div>
-
-                    <span className="text-[10px] font-black uppercase text-orange-600 tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                      Phase Standard
-                    </span>
-                  </div>
+                
                 </div>
 
                 
@@ -135,52 +133,49 @@ const TurnkeyServices = () => {
 
           </div>
         </div>
-        <div>
-          {/* 30% Faster Box */}
-          {servicePhases.map((phase, index) => (
-              <React.Fragment key={index}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+  {/* 30% Faster Box */}
+  {servicePhases.map((phase, index) => (
+    <React.Fragment key={index}>
+      {phase.title === "COMPLETION & OCCUPATION" && (
+        <div className="p-8 bg-gray-900 rounded-2xl relative overflow-hidden group h-full">
+          <FiTrendingUp className="absolute -right-4 -bottom-4 text-white/10 text-9xl group-hover:scale-110 transition-transform duration-700" />
 
-                {phase.title === "COMPLETION & OCCUPATION" && (
-                  <div className="md:col-span-2 p-8 bg-gray-900 rounded-2xl relative overflow-hidden group">
-                    <FiTrendingUp className="absolute -right-4 -bottom-4 text-white/10 text-9xl group-hover:scale-110 transition-transform duration-700" />
+          <div className="relative z-10">
+            <h4 className="text-white font-black uppercase exo text-3xl mb-3">
+              30% Faster
+            </h4>
 
-                    <div className="relative z-10">
-                      <h4 className="text-white font-black uppercase exo text-3xl mb-3">
-                        30% Faster
-                      </h4>
+            <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
+              Average reduction in mobilization time through our
+              centralized resource pool deployment.
+            </p>
+          </div>
+        </div>
+      )}
+    </React.Fragment>
+  ))}
 
-                      <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
-                        Average reduction in mobilization time through our
-                        centralized resource pool deployment.
-                      </p>
-                    </div>
-                  </div>
-                )}
-              </React.Fragment>
-                
-))}
+  {/* General Capabilities Info Card */}
+  <div className="p-8 bg-orange-500 text-white flex flex-col md:flex-row items-center justify-between gap-6 rounded-2xl h-full">
+    <div className="max-w-md">
+      <h5 className="font-black uppercase exo text-lg leading-tight">
+        Total Project Lifecycle Management
+      </h5>
 
+      <p className="text-orange-100 text-[11px] font-bold uppercase tracking-widest mt-1">
+        From Greenfield concepts to Brownfield optimizations
+      </p>
+    </div>
 
-                   {/* General Capabilities Info Card */}
-            <div className="md:col-span-2 mt-4 p-8 bg-orange-500 text-white flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="max-w-md">
-                <h5 className="font-black uppercase exo text-lg leading-tight">
-                  Total Project Lifecycle Management
-                </h5>
-
-                <p className="text-orange-100 text-[11px] font-bold uppercase tracking-widest mt-1">
-                  From Greenfield concepts to Brownfield optimizations
-                </p>
-              </div>
-
-              <button
+    <button
       onClick={() => navigate("/capability-document")}
       className="whitespace-nowrap px-8 py-3 bg-gray-900 hover:bg-black text-white font-black uppercase text-xs tracking-[0.2em] transition-all"
     >
       View Capability Document
     </button>
-            </div>
-        </div>
+  </div>
+</div>
 
         {/* Bottom General Text for length */}
         <div className="mt-20 pt-12 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-12">

@@ -42,68 +42,38 @@ function Home() {
 
   <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed border-l-8 border-gray-100 pl-8 font-medium mx-auto lg:pl-8">
     AVtech Plus LLP delivers end-to-end engineering and infrastructure 
-    solutions with a legacy of precision since 1981.
+    solutions with a legacy of precision.
   </p>
 </div>
 
-          {/* Right Column: Industrial Slider */}
-          <div className="w-full lg:w-2/5 relative">
-            {/* Architectural Frame Decoration */}
-            <div className="absolute -top-10 -right-10 w-64 h-64 border-t-8 border-r-8 border-orange-500/20 rounded-tr-[5rem] pointer-events-none hidden lg:block"></div>
-            
-            <div className="relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.25)] bg-gray-100 aspect-[4/5]">
-              {/* Image Layer */}
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out scale-110"
-                style={{
-                  backgroundImage: `url('${sliderImages[currentImageIndex]}')`,
-                }}
-              />
-              
-              {/* Overlay Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-transparent to-transparent"></div>
+         {/* Right Column: Industrial Image */}
+<div className="w-full lg:w-2/5 relative">
+  {/* Architectural Frame Decoration */}
+  <div className="absolute -top-10 -right-10 w-64 h-64 border-t-8 border-r-8 border-orange-500/20 rounded-tr-[5rem] pointer-events-none hidden lg:block"></div>
+  
+  <div className="relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.25)] bg-gray-100 aspect-[4/5]">
+    {/* Image Layer */}
+    <div
+      className="absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out"
+      style={{
+        backgroundImage: `url('/images/hero1.jpeg')`,
+      }}
+    />
+    
+    {/* Overlay Gradient */}
+    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-transparent to-transparent"></div>
 
-              {/* Slider UI Elements */}
-              <div className="absolute bottom-10 left-0 w-full px-10">
-                <div className="flex justify-between items-end">
-                  <div className="space-y-2">
-                    <p className="text-orange-500 font-black text-xs uppercase tracking-[0.5em]">Current Project</p>
-                    <h3 className="text-white text-3xl font-black uppercase tracking-tight italic">Structural Excellence</h3>
-                  </div>
-                  
-                  {/* Navigation Arrows */}
-                  <div className="flex gap-2">
-                    <button
-                      onClick={() => setCurrentImageIndex((prev) => (prev === 0 ? sliderImages.length - 1 : prev - 1))}
-                      className="bg-white/10 backdrop-blur-md hover:bg-orange-500 text-white p-4 rounded-xl transition-all"
-                    >
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" /></svg>
-                    </button>
-                    <button
-                      onClick={() => setCurrentImageIndex((prev) => (prev === sliderImages.length - 1 ? 0 : prev + 1))}
-                      className="bg-white/10 backdrop-blur-md hover:bg-orange-500 text-white p-4 rounded-xl transition-all"
-                    >
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" /></svg>
-                    </button>
-                  </div>
-                </div>
-
-                {/* Progress Indicators */}
-                <div className="flex gap-2 mt-8">
-                  {sliderImages.map((_, index) => (
-                    <div
-                      key={index}
-                      className={`h-1.5 transition-all duration-500 rounded-full ${
-                        index === currentImageIndex ? 'bg-orange-500 w-12' : 'bg-white/20 w-4'
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-            
-            
-          </div>
+    {/* Static UI Elements
+    <div className="absolute bottom-10 left-0 w-full px-10">
+      <div className="flex justify-between items-end">
+        <div className="space-y-2">
+          <p className="text-orange-500 font-black text-xs uppercase tracking-[0.5em]">Featured Project</p>
+          <h3 className="text-white text-3xl font-black uppercase tracking-tight italic">MAIN Project</h3>
+        </div>
+      </div>
+    </div> */}
+  </div>
+</div>
           
         </div>
       </div>

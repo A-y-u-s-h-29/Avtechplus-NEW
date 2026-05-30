@@ -69,58 +69,64 @@ const Vision = () => {
         </div>
 
         {/* About Section with Text Left and Images Right */}
-        <div className="grid lg:grid-cols-2 gap-4 items-start mb-16 m-14">
-          {/* Left Side - About Text */}
-          <div>
-            <div className="mb-6">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">About Us</h2>
-              <div className="w-16 h-1 bg-orange-500 mb-6"></div>
-            </div>
-            
-            <div className="space-y-6 text-gray-700 leading-relaxed">
-              <p>
-                <span className="font-bold text-orange-600">AVtech Plus LLP</span> stands as a symbol of excellence in the Techno-Commercial domain — a firm built on integrity, innovation, and expertise. With a legacy dating back to 1981 and over 25 years of industry experience, AVtech Plus LLP has been instrumental in shaping landmark projects across India and is guided by principles of transparency, efficiency, and innovation.
-              </p>
-              
-              <p>
-                AVtech Plus is engaged in core and critical sectors of the economy and our capabilities span the entire spectrum from design till delivery. With over two decades of a strong, customer focused approach and a continuous quest for world-class quality, we have unmatched expertise across Engineering, Construction, Infrastructure Projects.
-              </p>
-              
-              <p>
-                Our team of seasoned professionals combines technical precision with commercial insight to deliver solutions that are not only efficient but transformative.
-              </p>
-              
-              <p>
-                AVtech Plus LLP continues to empower businesses, minimize risks, and create lasting value for stakeholders. We don't just build projects — we build trust, progress, and partnerships that stand the test of time.
-              </p>
-            </div>
-          </div>
-
-          {/* Right Side - Circular Images */}
-          <div className="flex flex-col items-center gap-6 sm:gap-8">
-  {/* First Circle Image */}
-  <div className="relative">
-    <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-84 lg:h-84 rounded-full overflow-hidden">
-      <img 
-        src="/images/OUR VISION.png" 
-        alt="Construction Project"
-        className="w-full h-full object-cover"
-      />
+<div className="grid lg:grid-cols-2 gap-12 items-start mb-16 m-4 md:m-8 lg:m-14">
+  {/* Left Side - About Text */}
+  <div className="pr-0 lg:pr-8">
+    <div className="mb-6">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Us</h2>
+      <div className="w-16 h-1 bg-orange-500 mb-6"></div>
+    </div>
+    
+    <div className="space-y-6 text-gray-700 leading-relaxed">
+      <p className="text-justify md:text-left break-words">
+        <span className="font-bold text-orange-600">AVtech Plus LLP</span> stands as a symbol of excellence in the Techno-Commercial domain — a firm built on integrity, innovation, and expertise. With a legacy dating back to 1981 and over 25 years of industry experience, AVtech Plus LLP has been instrumental in shaping landmark projects across India and is guided by principles of transparency, efficiency, and innovation.
+      </p>
+      
+      <p className="text-justify md:text-left break-words">
+        AVtech Plus is engaged in core and critical sectors of the economy and our capabilities span the entire spectrum from design till delivery. With over two decades of a strong, customer focused approach and a continuous quest for world-class quality, we have unmatched expertise across Engineering, Construction, Infrastructure Projects.
+      </p>
+      
+      <p className="text-justify md:text-left break-words">
+        Our team of seasoned professionals combines technical precision with commercial insight to deliver solutions that are not only efficient but transformative.
+      </p>
+      
+      <p className="text-justify md:text-left break-words">
+        AVtech Plus LLP continues to empower businesses, minimize risks, and create lasting value for stakeholders. We don't just build projects — we build trust, progress, and partnerships that stand the test of time.
+      </p>
     </div>
   </div>
 
-  {/* Second Circle Image */}
-  <div className="relative">
-    <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-84 lg:h-84 rounded-full overflow-hidden">
-      <img 
-        src="/images/OUR MISSION.png" 
-        alt="Engineering Team"
-        className="w-full h-full object-cover"
-      />
+  {/* Right Side - Circular Images */}
+  <div className="flex flex-col items-center justify-center gap-8 sm:gap-10">
+    {/* First Circle Image */}
+    <div className="relative group">
+      <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-xl transition-transform duration-300 group-hover:scale-105">
+        <img 
+          src="/images/OUR VISION.png" 
+          alt="Our Vision"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+      {/* Optional: Add caption below image */}
+      <p className="text-center text-orange-600 font-semibold mt-3">Our Vision</p>
+    </div>
+
+    {/* Second Circle Image */}
+    <div className="relative group">
+      <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-xl transition-transform duration-300 group-hover:scale-105">
+        <img 
+          src="/images/OUR MISSION.png" 
+          alt="Our Mission"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+      {/* Optional: Add caption below image */}
+      <p className="text-center text-orange-600 font-semibold mt-3">Our Mission</p>
     </div>
   </div>
 </div>
-        </div>
 
         {/* Get a Free Consultation Section */}
         <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 md:p-12 mt-8">

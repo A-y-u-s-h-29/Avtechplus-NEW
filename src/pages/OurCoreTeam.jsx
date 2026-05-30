@@ -90,27 +90,28 @@ const CoreLeadership = () => {
           </div>
         </div>
 
-        {/* Additional Expertise Bullet Points Section */}
-        <div className="mb-20">
-          <div className="bg-gray-50 rounded-2xl p-8 md:p-10">
-            
-            <div className="space-y-4">
-              {additionalExpertise.map((point, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-[10px] font-bold">✓</span>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 leading-relaxed">
-                    {point}
-                  </p>
-                </div>
-              ))}
+      {/* Additional Expertise Bullet Points Section */}
+<div className="mb-8 sm:mb-10 md:mb-12 lg:mb-16 flex justify-center items-center px-3 sm:px-4 md:px-0">
+  <div className="bg-gray-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 lg:p-10 xl:p-12 w-full max-w-5xl mx-auto">
+    
+    <div className="flex flex-col items-center justify-center">
+      <div className="space-y-3 sm:space-y-4 md:space-y-5 w-full max-w-3xl">
+        {additionalExpertise.map((point, index) => (
+          <div key={index} className="flex items-start gap-2 sm:gap-3 md:gap-4">
+            <div className="flex-shrink-0 mt-0.5 sm:mt-1">
+              <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 bg-orange-500 rounded-full flex items-center justify-center shadow-sm">
+                <span className="text-white text-[8px] sm:text-[10px] md:text-[11px] font-bold">✓</span>
+              </div>
             </div>
+            <p className="text-gray-700 leading-relaxed text-xs sm:text-sm md:text-base text-justify sm:text-left break-words flex-1">
+              {point}
+            </p>
           </div>
-        </div>
-
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
         {/* BOTTOM SECTION: General Organization Info */}
         <div className="border-t border-gray-100 pt-8">
           
