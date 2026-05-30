@@ -46,7 +46,7 @@ const Navbar = () => {
     { 
       id: 2, 
       title: "About us", 
-      path: "/about",
+      path: "/",
       hasDropdown: true,
       subItems: [
         { title: "About AVtech", path: "/about-avtech" },
